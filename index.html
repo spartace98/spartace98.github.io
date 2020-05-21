@@ -14,7 +14,6 @@
 
 <body id = "home" class = "scrollspy">
   <!-- Navbar goes here -->
-
   <div class="navbar-fixed">
     <nav class = "red lighten-1">
       <div class = "container">
@@ -24,13 +23,13 @@
             <i class="material-icons">menu</i>
           </a>
           <ul class = "right hide-on-med-and-down">
-            <li class = "tab col s3">
+            <li class = "tab col s4">
               <a href="#about">About</a>
             </li>
-            <li class = "tab col s3">
+            <li class = "tab col s4">
               <a href="#projects">Projects</a>
             </li>
-            <li class = "tab col s3">
+            <li class = "tab col s4">
               <a href="#contact">Contact</a>
             </li>
           </ul>
@@ -136,27 +135,30 @@
     <!-- About Section -->
     <section id = "about" class = "section scrollspy">
       <div class = "container">
-        <h4 class = "center">
+        <h3 class = "center">
           About
-        </h4>
+        </h3>
         <div class = "container">
           <center>
             <p class="flow-text">
-              I am currently a student from Carnegie Mellon University, studying Electrical and Computer Engineering
+              I am a student from Carnegie Mellon University, studying Electrical and Computer Engineering.
             </p>
             <p class="flow-text">
-              I am interested in the research in Computer Graphics and Vision. 
+              I am passionate about using high performance computations to visualise and understand the world around us better.
+            </p>
+            <p class="flow-text">
+              To achieve this goal, I have been working on using computer vision and graphics to isolate and study objects from video and images.
             </p>
           </center>
         </div>
       </div>
     </section>
 
-    <!--  -->
-    <section id = "about" class = "section scrollspy">
+    <!-- Projects -->
+    <section id = "projects" class = "section scrollspy">
       <div class = "container">
         <h4 class = "center">
-          About
+          Projects
         </h4>
         <p>
           Welcome to my website. 
@@ -220,7 +222,7 @@
     <div id="phone" class="modal">
       <div class="modal-content">
         <h4>Phone Number</h4>
-        <p>US Contact: +1 412 708 8343</p>
+        <p>US Contact: +1 412-708-8343</p>
         <p>Please do not contact me through my phone unless absoluetely necessary</p>
       </div>
     </div>
@@ -240,6 +242,12 @@
           height: 500,
           transition: 500,
           interval: 6000,
+        });
+
+        // Scrollspy
+        const scrollspy = document.querySelector(".scrollspy");
+        M.ScrollSpy.init(scrollspy, {
+          scrollOffset: 50,
         });
 
         // Modal
