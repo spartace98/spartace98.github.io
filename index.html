@@ -20,7 +20,7 @@
     <nav class = "teal lighten-2">
       <div class = "container">
         <div class = "nav-wrapper">
-          <a href="#" class = "brand-logo">Ideas For the Future</a>
+          <a href="#" class = "brand-logo">Illumination</a>
           <a href="#" data-target = "mobile-nav" class = "sidenav-trigger">
             <i class="material-icons">menu</i>
           </a>
@@ -167,8 +167,8 @@
               <br></br>
 
               <center>
-                <img class="materialboxed" width="600" src="images/apriltag.png">
-              </center> 
+                <img class="responsive-img" width = "600" src="images/apriltag.png">
+              </center>
               <br></br>
 
               <h7>
@@ -177,7 +177,9 @@
               <br></br>
 
               <center>
-                <iframe width="600" height="350" src="https://www.youtube.com/embed/h9V9XSQQWD8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <div class="video-container">
+                  <iframe width="600" height="350" src="https://www.youtube.com/embed/h9V9XSQQWD8" frameborder="0" allowfullscreen></iframe>
+                </div>
               </center>
 
             </div>
@@ -193,7 +195,6 @@
         </ul>
       </div>
     </section>
-
 
     <!-- Footer  -->
     <footer class="page-foote teal lighten-2">
@@ -288,6 +289,10 @@
         // Modal
         const modal = document.querySelector(".modal");
         M.Modal.init(modal, {});
+
+        // Material Boxed
+        const materialboxed = document.querySelectorAll(".materialboxed");
+        M.Materialbox.init(materialboxed, {});
       </script>
     </body>
 
