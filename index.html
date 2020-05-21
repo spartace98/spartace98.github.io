@@ -7,6 +7,8 @@
   <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
   <!-- Font -->
   <script src="https://kit.fontawesome.com/9716671d02.js" crossorigin="anonymous"></script>
+  <!-- JQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
   <!--Let browser know website is optimized for mobile-->
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
@@ -15,7 +17,7 @@
 <body id = "home" class = "scrollspy">
   <!-- Navbar goes here -->
   <div class="navbar-fixed">
-    <nav class = "red lighten-1">
+    <nav class = "teal lighten-2">
       <div class = "container">
         <div class = "nav-wrapper">
           <a href="#" class = "brand-logo">Ideas For the Future</a>
@@ -39,130 +41,156 @@
   </div>
 
   <ul class = "sidenav" id = "mobile-nav">
-    <li>
-      <a href="#home">About</a>
+    <li >
+      <a class="sidenav-close" href="#about">About</a>
     </li>
     <li>
-      <a href="#search">Projects</a>
+      <a class="sidenav-close" href="#projects">Projects</a>
     </li>
     <li>
-      <a href="#home">Contact</a>
+      <a class="sidenav-close" href="#contact">Contact</a>
     </li>
   </ul>
 
   <!-- Slider  -->
-
   <section class = "slider">
     <ul class="slides">
       <li>
         <img src="images/portrait.jpg"> 
         <!-- random image -->
         <div class="caption right-align">
-          <h3 >An Electrical & Computer<br> Engineering Student</h3>
+          <h3 class>An Electrical & Computer<br> Engineering Student</h3>
           <h5 class="light grey-text text-lighten-3 hide-on-small-only">From Carnegie Institute of Technology</h5>
         </div>
       </li>
       <li>
+        <!-- Camera Calibration -->
         <img src="images/calibration.jpg"> 
-        <!-- random image -->
         <div class="caption right-align">
           <h3>Computer Vision</h3>
-          <h5 class="light grey-text text-lighten-3 hide-on-small-only">Uncovering new methods to visualise the world</h5>
+          <h5 class="light grey-text text-lighten-3 hide-on-small-only">Uncovering new methods <br> to visualise the world</h5>
         </div>
       </li>
       <li>
+        <!-- Magnetic Skyrmions -->
         <img src="images/skyrmions.jpg"> 
-        <!-- random image -->
         <div class="caption right-align">
           <h3>Simulations</h3>
-          <h5 class="light grey-text text-lighten-3 hide-on-small-only">Explaining physical phenomemons with high performance computations</h5>
+          <h5 class="light grey-text text-lighten-3 hide-on-small-only">Explaining physical phenomemons <br> with high performance computations</h5>
         </div>
       </li>
       <li>
-        <!-- <img src="https://lorempixel.com/580/250/nature/4">  -->
+        <img src="images/brain.jpg"> 
         <!-- random image -->
         <div class="caption center-align">
-          <h3>This is our big Tagline!</h3>
-          <h5 class="light grey-text text-lighten-3 hide-on-small-only">Here's our small slogan.</h5>
+          <h3>Machine Learning</h3>
+          <h5 class="light grey-text text-lighten-3 hide-on-small-only">Understanding relationships of natural processes</h5>
         </div>
       </li>
     </ul>
   </section>
 
-<!--     <section id = "search" class = "section section-search teal darken-1 white-text center scrollspy">
+  <!-- About Section -->
+  <section id = "about" class = "section scrollspy">
+    <div class = "container">
+      <h3 class = "center">
+        About
+      </h3>
       <div class = "container">
-        <div class = "row">
-          <div class = "col s12">
-            <h3>Search Destinations</h3>
-            <div class = "input-field">
-              <input type="text" class="white grey-text autocomplete" id = "autocomplete-input" placeholder="Aruba..">
+        <center>
+          <p class="flow-text">
+            I am a student from Carnegie Mellon University, studying Electrical and Computer Engineering.
+          </p>
+          <p class="flow-text">
+            I am passionate about using high performance computations to visualise and understand the world around us better.
+          </p>
+          <p class="flow-text">
+            I specialise in using image Analysis, machine learning and simulations.
+          </p>
+        </center>
+      </div>
+    </div>
+  </section>
+
+  <!-- Icons -->
+  <section class = "section section-icons grey lighten-4 center">
+    <div class = "row">
+      <div class = "col s12 m4">
+        <div class = "card-panel">
+          <a href="#image-analysis" data-click="true"><i class = "material-icons large grey-text">insert_photo</i></a>
+          <a href="#image-analysis" style = "color:black" data-click="true"><h4>Image Analysis</h4></a>
+          <p>Computer Vision, Object Detection</p>
+        </div>
+      </div>
+
+      <div class = "col s12 m4">
+        <div class = "card-panel">
+          <i class = "material-icons large grey-text">subtitles</i>
+          <h4>Machine Learning</h4>
+          <p>Classical ML & Neural Networks</p>
+        </div>
+      </div>
+
+      <div class = "col s12 m4">
+        <div class = "card-panel">
+          <i class = "material-icons large grey-text">computer</i>
+          <h4>Simulations</h4>
+          <p>Magnetic Skyrmions</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id = "projects" class = "section scrollspy">
+    <div class = "container">
+      <h4 class = "center">
+        Projects
+      </h4>
+      <ul class="collapsible popout">
+        <li>
+          <div id = "image-analysis" class="collapsible-header"><i class="material-icons">photo</i><h6>Image Analysis<h6></div>
+            <div class="collapsible-body">
+              <h7>
+                I have been working with Professor Nancy Pollard from the Robotics Institute in designing soft robotics hand for dexterous manipulations.
+              </h7>
+              <br></br>
+
+              <h7>
+                In order to test the robotic's hand ability to grab and perform manipulations to the object, the hand must be able to detect the object. 
+              </h7>
+              <br></br>
+
+              <h7>
+                April Tags are unique and easily detectable with any commerical camera. Current libraries are capable of providing dimensions and position of the detected tag, with careful camera calibration. 
+              </h7>
+              <br></br>
+
+              <center>
+                <img class="materialboxed" width="600" src="images/apriltag.png">
+              </center> 
+              <br></br>
+
+              <h7>
+                To test feedback between the camera and the computer, I simulated a complex racing game which can be controlled by the movements of the April Tag.
+              </h7>
+              <br></br>
+
+              <center>
+                <iframe width="600" height="350" src="https://www.youtube.com/embed/h9V9XSQQWD8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </center>
+
             </div>
-          </div>
-        </div>
-        
-      </div>
-    </section> -->
-
-    <!-- Icons -->
-    <section class = "section section-icons grey lighten-4 center">
-      <div class = "row">
-        <div class = "col s12 m4">
-          <div class = "card-panel">
-            <i class = "material-icons large grey-text">insert_photo</i>
-            <h4>Image Analysis</h4>
-            <p>Computer Vision, Object Detection</p>
-          </div>
-        </div>
-
-        <div class = "col s12 m4">
-          <div class = "card-panel">
-            <i class = "material-icons large grey-text">subtitles</i>
-            <h4>Machine Learning</h4>
-            <p>Classical ML & Neural Networks</p>
-          </div>
-        </div>
-
-        <div class = "col s12 m4">
-          <div class = "card-panel">
-            <i class = "material-icons large grey-text">computer</i>
-            <h4>Simulations</h4>
-            <p>Magnetic Skyrmions</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- About Section -->
-    <section id = "about" class = "section scrollspy">
-      <div class = "container">
-        <h3 class = "center">
-          About
-        </h3>
-        <div class = "container">
-          <center>
-            <p class="flow-text">
-              I am a student from Carnegie Mellon University, studying Electrical and Computer Engineering.
-            </p>
-            <p class="flow-text">
-              I am passionate about using high performance computations to visualise and understand the world around us better.
-            </p>
-            <p class="flow-text">
-              To achieve this goal, I have been working on using computer vision and graphics to isolate and study objects from video and images.
-            </p>
-          </center>
-        </div>
-      </div>
-    </section>
-
-    <!-- Projects -->
-    <section id = "projects" class = "section scrollspy">
-      <div class = "container">
-        <h4 class = "center">
-          Projects
-        </h4>
-        <p>
-          Welcome to my website. 
-        </p>
+          </li>
+          <li>
+            <div class="collapsible-header"><i class="material-icons">place</i><h6>Machine Learning</h6></div>
+            <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+          </li>
+          <li>
+            <div class="collapsible-header"><i class="material-icons">whatshot</i><h6>Simulations</h6></div>
+            <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+          </li>
+        </ul>
       </div>
     </section>
 
@@ -232,22 +260,29 @@
 
     <script>
         // Sidenav
-        const sideNav = document.querySelector(".sidenav");
-        M.Sidenav.init(sideNav, {});
+        const sideNav = document.querySelectorAll(".sidenav");
+        M.Sidenav.init(sideNav, {
+          onOpenStart: true,
+        });
 
         // Slider
-        const slider = document.querySelector(".slider");
+        const slider = document.querySelectorAll(".slider");
         M.Slider.init(slider, {
-          indicators: false,
-          height: 500,
+          indicators: true,
+          height: 600,
           transition: 500,
           interval: 6000,
         });
 
         // Scrollspy
-        const scrollspy = document.querySelector(".scrollspy");
-        M.ScrollSpy.init(scrollspy, {
-          scrollOffset: 50,
+        const scrollspy = document.querySelectorAll(".scrollspy");
+        M.ScrollSpy.init(scrollspy, {});
+
+        // collapsible
+        const collapsible = document.querySelectorAll(".collapsible");
+        M.Collapsible.init(collapsible, {});
+        $("[data-click]").on("click", function (e) {
+          $( $(this).attr("href") ).trigger("click");
         });
 
         // Modal
