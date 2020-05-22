@@ -7,7 +7,7 @@
   <!--Import materialize.css-->
   <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
   <!-- Font -->
-  <script src="https://kit.fontawesome.com/9716671d02.js" crossorigin="anonymous"></script>
+  <!-- <script src="https://kit.fontawesome.com/9716671d02.js" crossorigin="anonymous"></script> -->
   <!-- JQuery -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
@@ -76,8 +76,8 @@
     <ul class="slides">
       <li>
         <!-- Photo of myself -->
-        <img src="images/portrait.jpg">
-        <div class="caption right-align">
+        <img src="images/portrait2.jpeg">
+        <div class="caption left-align">
           <h3 class>An Electrical & Computer<br> Engineering Student</h3>
           <h5 class="light grey-text text-lighten-3 hide-on-small-only">From Carnegie Institute of Technology</h5>
         </div>
@@ -91,6 +91,17 @@
             world</h5>
         </div>
       </li>
+
+      <li>
+        <img src="images/brain.jpg">
+        <!-- NUS Internship -->
+        <div class="caption center-align">
+          <h3>Machine Learning</h3>
+          <h5 class="light grey-text text-lighten-3 hide-on-small-only">Uncovering relationships of natural processes
+          </h5>
+        </div>
+      </li>
+
       <li>
         <!-- Magnetic Skyrmions -->
         <img src="images/skyrmions.jpg">
@@ -98,15 +109,6 @@
           <h3>Simulations</h3>
           <h5 class="light grey-text text-lighten-3 hide-on-small-only">Explaining physical phenomemons <br> with high
             performance computations</h5>
-        </div>
-      </li>
-      <li>
-        <img src="images/brain.jpg">
-        <!-- random image -->
-        <div class="caption center-align">
-          <h3>Machine Learning</h3>
-          <h5 class="light grey-text text-lighten-3 hide-on-small-only">Uncovering relationships of natural processes
-          </h5>
         </div>
       </li>
     </ul>
@@ -175,185 +177,218 @@
       <h3 class="center">
         Projects
       </h3>
-      <ul class="collapsible popout">
+      <ul class="collapsible">
+
+        <!-- Image Analysis -->
         <li>
           <div id="image-analysis" class="collapsible-header"><i class="material-icons">photo</i>
             <h6>Image Analysis<h6>
           </div>
           <div class="collapsible-body">
+            <!-- CMU Research and 112 Term Project -->
+            <ul class="collapsible popout">
+              <li>
+                <div class="collapsible-header"><i class="material-icons">fingerprint</i>April Tag Detection for Soft
+                  Robotics Hand Manipulations</div>
+                <div class="collapsible-body">
+                  <h7>
+                    I have been working with Professor Nancy Pollard
+                    <a href="http://graphics.cs.cmu.edu/nsp/index.html" style="color:#19CEE3"><i
+                        class="material-icons">person</i></a>
+                    from the Robotics Institute to design a soft robotics hand for dexterous manipulations.
+                  </h7>
+                  <br></br>
 
-            <!-- CMU Research -->
-            <h5>April Tag Detection for Soft Robotics Hand Manipulations</h5>
-            <h7>
-              I have been working with Professor Nancy Pollard
-              <a href="http://graphics.cs.cmu.edu/nsp/index.html" style="color:#19CEE3"><i
-                  class="material-icons">person</i></a>
-              from the Robotics Institute to design a soft robotics hand for dexterous manipulations.
-            </h7>
-            <br></br>
+                  <h7>
+                    In order to test the robotic's hand ability to grab and perform manipulations to the object, the
+                    hand must
+                    be able to detect the object.
+                  </h7>
+                  <br></br>
 
-            <h7>
-              In order to test the robotic's hand ability to grab and perform manipulations to the object, the hand must
-              be able to detect the object.
-            </h7>
-            <br></br>
+                  <h7>
+                    April Tags are unique and easily detectable with any commerical camera. Current libraries are
+                    capable of
+                    providing dimensions and position of the detected tag, with careful camera calibration.
+                  </h7>
+                  <br></br>
 
-            <h7>
-              April Tags are unique and easily detectable with any commerical camera. Current libraries are capable of
-              providing dimensions and position of the detected tag, with careful camera calibration.
-            </h7>
-            <br></br>
+                  <center>
+                    <img class="responsive-img" width="600" src="images/apriltag.png">
+                  </center>
+                  <br></br>
 
-            <center>
-              <img class="responsive-img" width="600" src="images/apriltag.png">
-            </center>
-            <br></br>
+                  <h7>
+                    To test feedback between the camera and the computer, I simulated a complex racing game which can be
+                    controlled by the movements of the April Tag.
+                  </h7>
+                  <br></br>
 
-            <h7>
-              To test feedback between the camera and the computer, I simulated a complex racing game which can be
-              controlled by the movements of the April Tag.
-            </h7>
-            <br></br>
+                  <center>
+                    <div class="video-container">
+                      <iframe width="600" height="350" src="https://www.youtube.com/embed/h9V9XSQQWD8" frameborder="0"
+                        allowfullscreen></iframe>
+                    </div>
+                  </center>
+                  <br></br>
+                </div>
+              </li>
 
-            <center>
-              <div class="video-container">
-                <iframe width="600" height="350" src="https://www.youtube.com/embed/h9V9XSQQWD8" frameborder="0"
-                  allowfullscreen></iframe>
-              </div>
-            </center>
-            <br></br>
+              <!-- Hack 112 -->
+              <li>
+                <div class="collapsible-header"><i class="material-icons">camera</i>Object Detection for General
+                  Applications</div>
+                <div class="collapsible-body">
+                  <h7>
+                    It is useful to detect any given object for general applications.
+                  </h7>
+                  <br></br>
 
-            <h5>Object Detection for General Applications</h5>
-            <h7>
-              It is useful to detect any given object for general applications.
-            </h7>
-            <br></br>
+                  <h7>
+                    For objects with isolated color, without machine learning techniques to understand the texture, it
+                    is
+                    difficult to analyse the angle of the given object.
+                  </h7>
+                  <br></br>
 
-            <h7>
-              For objects with isolated color, without machine learning techniques to understand the texture, it is
-              difficult to analyse the angle of the given object.
-            </h7>
-            <br></br>
+                  <h7>
+                    A meaningful first step that has application, however, is to detect its position
+                    from a given image with color calibration to isolate the given object from the surroundings.
+                  </h7>
+                  <br></br>
 
-            <h7>
-              A meaningful first step that has application, however, is to detect its position
-              from a given image with color calibration to isolate the given object from the surroundings.
-            </h7>
-            <br></br>
+                  <center>
+                    <img class="responsive-img" width="600" src="images/hack112.png">
+                  </center>
+                  <br></br>
 
-            <center>
-              <img class="responsive-img" width="600" src="images/hack112.png">
-            </center>
-            <br></br>
+                  <h7>
+                    I further tested the feedback between the real time object detection and performance of a given
+                    task.
+                  </h7>
+                  <br></br>
 
-            <h7>
-              I further tested the feedback between the real time object detection and performance of a given task.
-            </h7>
-            <br></br>
+                  <center>
+                    <div class="video-container">
+                      <iframe width="600" height="350" src="https://www.youtube.com/embed/GB3kflPI9Es" frameborder="0"
+                        allowfullscreen></iframe>
+                    </div>
+                  </center>
+                  <br></br>
 
-            <center>
-              <div class="video-container">
-                <iframe width="600" height="350" src="https://www.youtube.com/embed/GB3kflPI9Es" frameborder="0"
-                  allowfullscreen></iframe>
-              </div>
-            </center>
-            <br></br>
-
-            <h7>
-              My project has demonstrate that while it is possible to perform a task with object detection of a general
-              object,
-              further research can be done to improve the efficiency of this feedback.
-            </h7>
-            <br></br>
+                  <h7>
+                    My project has demonstrate that while it is possible to perform a task with object detection of a
+                    general
+                    object,
+                    further research can be done to improve the efficiency of this feedback.
+                  </h7>
+                </div>
+              </li>
+            </ul>
           </div>
         </li>
+
+        <!-- Machine Learning -->
         <li>
-          <div id="machine-learning" class="collapsible-header"><i class="material-icons">subtitles</i>
+          <div id="machine-learning" class="collapsible-header"><i class="material-icons">keyboard</i>
             <h6>Machine Learning</h6>
           </div>
           <div class="collapsible-body">
+            <ul class="collapsible  popout">
 
-            <!-- NUS Internship -->
-            <h5>Analysing Functional Connectivity between Regions of Interests of the Human Brain</h5>
-            <h7>
-              Application of machine learning algorithms to
-              neuroscience has led to better understanding of the human brain.
-            </h7>
-            <br></br>
+              <!-- NUS Internship -->
+              <li>
+                <div class="collapsible-header"><i class="material-icons">face</i>Analysing Functional
+                  Connectivity between Regions of Interests of the Human Brain</div>
+                <div class="collapsible-body">
+                  <h7>
+                    Application of machine learning algorithms to
+                    neuroscience has led to better understanding of the human brain.
+                  </h7>
+                  <br></br>
 
-            <h7>
-              Recent studies suggest that functional connectivity from
-              fMRI scans of the human brain provides a good way to analyse
-              brain activity.
-            </h7>
-            <br></br>
+                  <h7>
+                    Recent studies suggest that functional connectivity from
+                    fMRI scans of the human brain provides a good way to analyse
+                    brain activity.
+                  </h7>
+                  <br></br>
 
-            <h7>
-              I embarked on a project with Professor Thomas Yeo
-              <a href="https://www.eng.nus.edu.sg/ece/staff/yeo-boon-thye-thomas/" style="color:#19CEE3"><i
-                  class="material-icons">person</i></a>
-              from the Department of Electrical and Computer Engineering,
-              National University of Singapore (NUS), to further study this
-              relationship.
-            </h7>
-            <br></br>
+                  <h7>
+                    I embarked on a project with Professor Thomas Yeo
+                    <a href="https://www.eng.nus.edu.sg/ece/staff/yeo-boon-thye-thomas/" style="color:#19CEE3"><i
+                        class="material-icons">person</i></a>
+                    from the Department of Electrical and Computer Engineering,
+                    National University of Singapore (NUS), to further study this
+                    relationship.
+                  </h7>
+                  <br></br>
 
-            <h7>
-              Further details of the project can be found on my github page
-              <a href="https://github.com/spartace98/NUS-Internship" target="_blank" style="color:orange"><i
-                  class="material-icons">find_in_page</i></a>
-            </h7>
-            <br></br>
+                  <h7>
+                    Further details of the project can be found on my github page
+                    <a href="https://github.com/spartace98/NUS-Internship" target="_blank" style="color:orange"><i
+                        class="material-icons">find_in_page</i></a>
+                  </h7>
+                  <br></br>
 
-            <div class="container">
-              <img class="materialboxed" width="600" src="images/svr.gif" alt="animated">
-            </div>
-            <br></br>
+                  <div class="container">
+                    <img class="materialboxed" width="600" src="images/svr.gif" alt="animated">
+                  </div>
+                </div>
+              </li>
 
-            <h5>Shoppee Data Science Competition</h5>
+              <!-- Shopee Data Science Competition-->
+              <li>
+                <div class="collapsible-header"><i class="material-icons">shopping_cart</i>Shoppee Data Science Competition
+                </div>
+                <div class="collapsible-body">
+                  <h7>
+                    We were given the text and images for products on a e-commerce website,
+                    and were tasked to predict and categorise the product based on the available data.
+                  </h7>
+                  <br></br>
 
-            <h7>
-              We were given the text and images for products on a e-commerce website,
-              and were tasked to predict and categorise the product based on the available data.
-            </h7>
-            <br></br>
+                  <h7>
+                    Further details of the project can be found on my github page
+                    <a href="https://github.com/spartace98/National-Data-Science-Challenge" target="_blank"
+                      style="color:orange"><i class="material-icons">find_in_page</i></a>
+                  </h7>
+                </div>
+              </li>
 
-            <h7>
-              Further details of the project can be found on my github page
-              <a href="https://github.com/spartace98/National-Data-Science-Challenge" target="_blank"
-                style="color:orange"><i class="material-icons">find_in_page</i></a>
-            </h7>
-            <br></br>
+              <!-- Kaggle Image Recognition Unsupervised Learning-->
+              <li>
+                <div class="collapsible-header"><i class="material-icons">local_hospital</i>Kaggle Pneumonia Detection</div>
+                <div class="collapsible-body">
+                  <h7>
+                    Machine Learning techniques provide medical professionals with
+                    more accurate and reliable tool for pneumonia diagnosis in contrast
+                    with manual diagnosis by sight.
+                  </h7>
 
-            <!-- Kaggle Image Recognition Unsupervised Learning-->
-            <h5>Kaggle Pneumonia Detection</h5>
-            <h7>
-              Machine Learning techniques provide medical professionals with
-              more accurate and reliable tool for pneumonia diagnosis in contrast
-              with manual diagnosis by sight.
-            </h7>
+                  <div class="container">
+                    <img class="materialboxed" width="600" src="images/pneumonia.jpeg">
+                  </div>
+                  <br></br>
 
-            <div class="container">
-              <img class="materialboxed" width="600" src="images/pneumonia.jpeg">
-            </div>
-            <br></br>
+                  <h7>
+                    My model was able to reach a peak of 93.1% prediction accuracy,
+                    which is significanly higher than the 72.3% diagnosis accuracy of
+                    doctors (According to the United States National Institute of Health)
+                  </h7>
+                  <br></br>
 
-            <h7>
-              My model was able to reach a peak of 93.1% prediction accuracy,
-              which is significanly higher than the 72.3% diagnosis accuracy of
-              doctors (According to the United States National Institute of Health)
-            </h7>
-            <br></br>
-
-            <h7>
-              Further details of the project can be found on my github page
-              <a href="https://github.com/spartace98/Pneumonia-Detection" target="_blank" style="color:orange"><i
-                  class="material-icons">find_in_page</i></a>
-            </h7>
-            <br></br>
-
-
+                  <h7>
+                    Further details of the project can be found on my github page
+                    <a href="https://github.com/spartace98/Pneumonia-Detection" target="_blank" style="color:orange"><i
+                        class="material-icons">find_in_page</i></a>
+                  </h7>
+                </div>
+              </li>
+            </ul>
           </div>
+
+          <!-- Simulations -->
         </li>
         <li>
           <div id="simulations" class="collapsible-header"><i class="material-icons">computer</i>
@@ -458,10 +493,12 @@
       <h3 class="center">
         Credits
       </h3>
-      <h6>
-        I would specially like to thank my mentors who have guided and encouraged me to
-        pursue my aspiration to do good research.
-      </h6>
+      <center>
+        <h6>
+          I would specially like to thank my mentors who have advised and 
+          encouraged me on my research.
+        </h6>
+      </center>
 
       <center>
         <p>
@@ -560,7 +597,7 @@
     const slider = document.querySelectorAll(".slider");
     M.Slider.init(slider, {
       indicators: true,
-      height: 600,
+      height: 800,
       transition: 500,
       interval: 6000,
     });
