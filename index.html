@@ -26,16 +26,22 @@
             <i class="material-icons">menu</i>
           </a>
           <ul class="right hide-on-med-and-down">
-            <li class="tab col s3">
+            <li class="tab col s2">
               <a href="#about">About</a>
             </li>
-            <li class="tab col s3">
+            <li class="tab col s2">
               <a href="#projects">Projects</a>
             </li>
-            <li class="tab col s3">
+            <li class="tab col s2">
               <a href="#awards">Awards</a>
             </li>
-            <li class="tab col s3">
+            <li class="tab col s2">
+              <a href="resume-lichao.docx" download>Resume</a>
+            </li>
+            <li class="tab col s2">
+              <a href="#credits">Credits</a>
+            </li>
+            <li class="tab col s2">
               <a href="#contact">Contact</a>
             </li>
           </ul>
@@ -50,6 +56,15 @@
     </li>
     <li>
       <a class="sidenav-close" href="#projects">Projects</a>
+    </li>
+    <li>
+      <a class="sidenav-close" href="#awards">Awards</a>
+    </li>
+    <li>
+      <a class="sidenav-close" href="resume-lichao.docx" download>Resume</a>
+    </li>
+    <li>
+      <a class="sidenav-close" href="#credits">Credits</a>
     </li>
     <li>
       <a class="sidenav-close" href="#contact">Contact</a>
@@ -274,11 +289,11 @@
             <br></br>
 
             <h7>
-              I embarked on a project with Professor Thomas Yeo 
+              I embarked on a project with Professor Thomas Yeo
               <a href="https://www.eng.nus.edu.sg/ece/staff/yeo-boon-thye-thomas/" style="color:#19CEE3"><i
-                class="material-icons">person</i></a>
-              from the Department of Electrical and Computer Engineering, 
-              National University of Singapore (NUS), to further study this 
+                  class="material-icons">person</i></a>
+              from the Department of Electrical and Computer Engineering,
+              National University of Singapore (NUS), to further study this
               relationship.
             </h7>
             <br></br>
@@ -295,7 +310,6 @@
             </div>
             <br></br>
 
-            <br></br>
             <h5>Shoppee Data Science Competition</h5>
 
             <h7>
@@ -311,8 +325,25 @@
             </h7>
             <br></br>
 
-            <br></br>
+            <!-- Kaggle Image Recognition Unsupervised Learning-->
             <h5>Kaggle Pneumonia Detection</h5>
+            <h7>
+              Machine Learning techniques provide medical professionals with
+              more accurate and reliable tool for pneumonia diagnosis in contrast
+              with manual diagnosis by sight.
+            </h7>
+
+            <div class="container">
+              <img class="materialboxed" width="600" src="images/pneumonia.jpeg">
+            </div>
+            <br></br>
+
+            <h7>
+              My model was able to reach a peak of 93.1% prediction accuracy,
+              which is significanly higher than the 72.3% diagnosis accuracy of
+              doctors (According to the United States National Institute of Health)
+            </h7>
+            <br></br>
 
             <h7>
               Further details of the project can be found on my github page
@@ -413,7 +444,7 @@
           <center>
             <i>Ministry of Education
               <br>
-              <b>Selected to study Higher Level University Physics</b>
+              <b>Selected to study Higher Level University Physics (2016)</b>
             </i>
           </center>
         </li>
@@ -422,7 +453,7 @@
   </section>
 
   <!-- Mentors -->
-  <section id="mentors">
+  <section id="credits" class="section scrollspy">
     <div class="container">
       <h3 class="center">
         Credits
@@ -459,8 +490,8 @@
         <div class="col l6 s12">
           <h5 class="white-text">Contact</h5>
           <p class="grey-text text-lighten-4">
-            If you are interested to learn more about my work and would like to 
-            schedule an interview with me, do contact me through the links on 
+            If you are interested to learn more about my work and would like to
+            schedule an interview with me, do contact me through the links on
             the right!
           </p>
         </div>
@@ -560,6 +591,9 @@
       indicators: true,
     });
 
+    // Tap-target
+    const tap_target = document.querySelectorAll(".tap-target");
+    M.TapTarget.init(tap_target, {});
   </script>
 </body>
 
