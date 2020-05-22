@@ -1,40 +1,41 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <!--Import Google Icon Font-->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <!--Import materialize.css-->
-  <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+  <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
   <!-- Font -->
   <script src="https://kit.fontawesome.com/9716671d02.js" crossorigin="anonymous"></script>
   <!-- JQuery -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
   <!--Let browser know website is optimized for mobile-->
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 </head>
 
-<body id = "home" class = "scrollspy">
+<body id="home" class="scrollspy">
   <!-- Navbar goes here -->
   <div class="navbar-fixed">
-    <nav class = "teal lighten-2">
-      <div class = "container">
-        <div class = "nav-wrapper">
-          <a href="#" class = "brand-logo">Illumination</a>
-          <a href="#" data-target = "mobile-nav" class = "sidenav-trigger">
+    <nav class="teal lighten-2">
+      <div class="container">
+        <div class="nav-wrapper">
+          <a href="#" class="brand-logo">Ideation</a>
+          <a href="#" data-target="mobile-nav" class="sidenav-trigger">
             <i class="material-icons">menu</i>
           </a>
-          <ul class = "right hide-on-med-and-down">
-            <li class = "tab col s3">
+          <ul class="right hide-on-med-and-down">
+            <li class="tab col s3">
               <a href="#about">About</a>
             </li>
-            <li class = "tab col s3">
+            <li class="tab col s3">
               <a href="#projects">Projects</a>
             </li>
-            <li class = "tab col s3">
+            <li class="tab col s3">
               <a href="#awards">Awards</a>
             </li>
-            <li class = "tab col s3">
+            <li class="tab col s3">
               <a href="#contact">Contact</a>
             </li>
           </ul>
@@ -43,8 +44,8 @@
     </nav>
   </div>
 
-  <ul class = "sidenav" id = "mobile-nav">
-    <li >
+  <ul class="sidenav" id="mobile-nav">
+    <li>
       <a class="sidenav-close" href="#about">About</a>
     </li>
     <li>
@@ -56,11 +57,11 @@
   </ul>
 
   <!-- Slider  -->
-  <section class = "slider">
+  <section class="slider">
     <ul class="slides">
       <li>
-        <img src="images/portrait.jpg"> 
-        <!-- random image -->
+        <!-- Photo of myself -->
+        <img src="images/portrait.jpg">
         <div class="caption right-align">
           <h3 class>An Electrical & Computer<br> Engineering Student</h3>
           <h5 class="light grey-text text-lighten-3 hide-on-small-only">From Carnegie Institute of Technology</h5>
@@ -68,38 +69,41 @@
       </li>
       <li>
         <!-- Camera Calibration -->
-        <img src="images/calibration.jpg"> 
+        <img src="images/calibration.jpg">
         <div class="caption right-align">
           <h3>Computer Vision</h3>
-          <h5 class="light grey-text text-lighten-3 hide-on-small-only">Uncovering new methods <br> to visualise the world</h5>
+          <h5 class="light grey-text text-lighten-3 hide-on-small-only">Uncovering new methods <br> to visualise the
+            world</h5>
         </div>
       </li>
       <li>
         <!-- Magnetic Skyrmions -->
-        <img src="images/skyrmions.jpg"> 
+        <img src="images/skyrmions.jpg">
         <div class="caption right-align">
           <h3>Simulations</h3>
-          <h5 class="light grey-text text-lighten-3 hide-on-small-only">Explaining physical phenomemons <br> with high performance computations</h5>
+          <h5 class="light grey-text text-lighten-3 hide-on-small-only">Explaining physical phenomemons <br> with high
+            performance computations</h5>
         </div>
       </li>
       <li>
-        <img src="images/brain.jpg"> 
+        <img src="images/brain.jpg">
         <!-- random image -->
         <div class="caption center-align">
           <h3>Machine Learning</h3>
-          <h5 class="light grey-text text-lighten-3 hide-on-small-only">Uncovering relationships of natural processes</h5>
+          <h5 class="light grey-text text-lighten-3 hide-on-small-only">Uncovering relationships of natural processes
+          </h5>
         </div>
       </li>
     </ul>
   </section>
 
   <!-- About Section -->
-  <section id = "about" class = "section scrollspy">
-    <div class = "container">
-      <h3 class = "center">
+  <section id="about" class="section scrollspy">
+    <div class="container">
+      <h3 class="center">
         About
       </h3>
-      <div class = "container">
+      <div class="container">
         <center>
           <p class="flow-text">
             I am a student from Carnegie Mellon University, studying Electrical and Computer Engineering.
@@ -116,28 +120,34 @@
   </section>
 
   <!-- Icons -->
-  <section class = "section section-icons grey lighten-4 center">
-    <div class = "row">
-      <div class = "col s12 m4">
-        <div class = "card-panel">
-          <a href="#image-analysis" data-click="true"><i class = "material-icons large grey-text">insert_photo</i></a>
-          <a href="#image-analysis" style = "color:black" data-click="true"><h4>Image Analysis</h4></a>
+  <section class="section section-icons grey lighten-4 center">
+    <div class="row">
+      <div class="col s12 m4">
+        <div class="card-panel">
+          <a href="#image-analysis" data-click="true"><i class="material-icons large grey-text">insert_photo</i></a>
+          <a href="#image-analysis" style="color:black" data-click="true">
+            <h4>Image Analysis</h4>
+          </a>
           <p>Computer Vision, Object Detection</p>
         </div>
       </div>
 
-      <div class = "col s12 m4">
-        <div class = "card-panel">
-          <a href = "#machine-learning" data-click = "true"><i class = "material-icons large grey-text">subtitles</i></a>
-          <a href = "#machine-learning" style = "color:black" data-click = "true"><h4>Machine Learning</h4></a>
+      <div class="col s12 m4">
+        <div class="card-panel">
+          <a href="#machine-learning" data-click="true"><i class="material-icons large grey-text">subtitles</i></a>
+          <a href="#machine-learning" style="color:black" data-click="true">
+            <h4>Machine Learning</h4>
+          </a>
           <p>Classical ML & Neural Networks</p>
         </div>
       </div>
 
-      <div class = "col s12 m4">
-        <div class = "card-panel">
-          <a href = "#simulations" data-click = "true"><i class = "material-icons large grey-text">computer</i></a>
-          <a href = "#simulations" style = "color:black" data-click = "true"><h4>Simulations</h4></a>
+      <div class="col s12 m4">
+        <div class="card-panel">
+          <a href="#simulations" data-click="true"><i class="material-icons large grey-text">computer</i></a>
+          <a href="#simulations" style="color:black" data-click="true">
+            <h4>Simulations</h4>
+          </a>
           <p>Magnetic Skyrmions</p>
         </div>
       </div>
@@ -145,164 +155,179 @@
   </section>
 
   <!-- Projects -->
-  <section id = "projects" class = "section scrollspy">
-    <div class = "container">
-      <h3 class = "center">
+  <section id="projects" class="section scrollspy">
+    <div class="container">
+      <h3 class="center">
         Projects
       </h3>
       <ul class="collapsible popout">
         <li>
-          <div id = "image-analysis" class="collapsible-header"><i class="material-icons">photo</i><h6>Image Analysis<h6></div>
-            <div class="collapsible-body">
-              
-              <!-- CMU Research -->
-              <h5>April Tag Detection for Soft Robotics Hand Manipulations</h5>
-              <h7>
-                I have been working with Professor Nancy Pollard 
-                <a href = "http://graphics.cs.cmu.edu/nsp/index.html" style = "color:black"><i class="material-icons">person</i></a>
-                from the Robotics Institute to design a soft robotics hand for dexterous manipulations.
-              </h7>
-              <br></br>
+          <div id="image-analysis" class="collapsible-header"><i class="material-icons">photo</i>
+            <h6>Image Analysis<h6>
+          </div>
+          <div class="collapsible-body">
 
-              <h7>
-                In order to test the robotic's hand ability to grab and perform manipulations to the object, the hand must be able to detect the object. 
-              </h7>
-              <br></br>
+            <!-- CMU Research -->
+            <h5>April Tag Detection for Soft Robotics Hand Manipulations</h5>
+            <h7>
+              I have been working with Professor Nancy Pollard
+              <a href="http://graphics.cs.cmu.edu/nsp/index.html" style="color:#19CEE3"><i
+                  class="material-icons">person</i></a>
+              from the Robotics Institute to design a soft robotics hand for dexterous manipulations.
+            </h7>
+            <br></br>
 
-              <h7>
-                April Tags are unique and easily detectable with any commerical camera. Current libraries are capable of providing dimensions and position of the detected tag, with careful camera calibration. 
-              </h7>
-              <br></br>
+            <h7>
+              In order to test the robotic's hand ability to grab and perform manipulations to the object, the hand must
+              be able to detect the object.
+            </h7>
+            <br></br>
 
-              <center>
-                <img class="responsive-img" width = "600" src="images/apriltag.png">
-              </center>
-              <br></br>
+            <h7>
+              April Tags are unique and easily detectable with any commerical camera. Current libraries are capable of
+              providing dimensions and position of the detected tag, with careful camera calibration.
+            </h7>
+            <br></br>
 
-              <h7>
-                To test feedback between the camera and the computer, I simulated a complex racing game which can be controlled by the movements of the April Tag.
-              </h7>
-              <br></br>
+            <center>
+              <img class="responsive-img" width="600" src="images/apriltag.png">
+            </center>
+            <br></br>
 
-              <center>
-                <div class="video-container">
-                  <iframe width="600" height="350" src="https://www.youtube.com/embed/h9V9XSQQWD8" frameborder="0" allowfullscreen></iframe>
-                </div>
-              </center>
-              <br></br>
+            <h7>
+              To test feedback between the camera and the computer, I simulated a complex racing game which can be
+              controlled by the movements of the April Tag.
+            </h7>
+            <br></br>
 
-              <h5>Object Detection for General Applications</h5>
-              <h7>
-                It is useful to detect any given object for general applications. 
-              </h7>
-              <br></br>
-
-              <h7>
-                For objects with isolated color, without machine learning techniques to understand the texture, it is
-                difficult to analyse the angle of the given object. 
-              </h7>
-              <br></br>
-
-              <h7>
-                A meaningful first step that has application, however, is to detect its position 
-                from a given image with color calibration to isolate the given object from the surroundings. 
-              </h7>
-              <br></br>
-
-              <center>
-                <img class="responsive-img" width = "600" src="images/hack112.png">
-              </center>
-              <br></br>
-
-              <h7>
-                I further tested the feedback between the real time object detection and performance of a given task. 
-              </h7>
-              <br></br>
-
-              <center>
-                <div class="video-container">
-                  <iframe width="600" height="350" src="https://www.youtube.com/embed/GB3kflPI9Es" frameborder="0" allowfullscreen></iframe>
-                </div>
-              </center>
-              <br></br>
-
-              <h7>
-                My project has demonstrate that while it is possible to perform a task with object detection of a general object, 
-                further research can be done to improve the efficiency of this feedback. 
-              </h7>
-              <br></br>
-            </div>
-        </li>
-        <li>
-          <div id = "machine-learning" class="collapsible-header"><i class="material-icons">subtitles</i><h6>Machine Learning</h6></div>
-            <div class="collapsible-body">
-
-              <!-- NUS Internship -->
-              <h5>Analysing Functional Connectivity between Regions of Interests of the Human Brain</h5>
-              <h7>
-                Application of machine learning algorithms to 
-                neuroscience has led to better understanding of the human brain. 
-              </h7>
-              <br></br>
-              
-              <h7>
-                Recent studies suggest that functional connectivity from 
-                fMRI scans of the human brain provides a good way to analyse 
-                brain activity.
-              </h7>
-              <br></br>
-
-              <h7>
-                I embarked on a project with Professor Thomas Yeo from the 
-                ECE Department, National University of Singapore, to further 
-                study this relationship
-              </h7>
-              <br></br>
-
-              <h7>
-                Further details of the project can be found on my github page 
-                <a href = "https://github.com/spartace98/NUS-Internship" 
-                target="_blank" style = "color:orange"><i class="material-icons">find_in_page</i></a>
-              </h7>
-              <br></br>
-
-              <div class = "container">
-                <img class="materialboxed" width="600" src="images/svr.gif" alt="animated">
+            <center>
+              <div class="video-container">
+                <iframe width="600" height="350" src="https://www.youtube.com/embed/h9V9XSQQWD8" frameborder="0"
+                  allowfullscreen></iframe>
               </div>
-              <br></br>
+            </center>
+            <br></br>
 
-              <br></br>
-              <h5>Shoppee Data Science Competition</h5>
+            <h5>Object Detection for General Applications</h5>
+            <h7>
+              It is useful to detect any given object for general applications.
+            </h7>
+            <br></br>
 
-              <h7>
-                We were given the text and images for products on a e-commerce website, 
-                and were tasked to predict and categorise the product based on the available data. 
-              </h7>
-              <br></br>
+            <h7>
+              For objects with isolated color, without machine learning techniques to understand the texture, it is
+              difficult to analyse the angle of the given object.
+            </h7>
+            <br></br>
 
-              <h7>
-                Further details of the project can be found on my github page 
-                <a href = "https://github.com/spartace98/National-Data-Science-Challenge" 
-                target="_blank" style = "color:orange"><i class="material-icons">find_in_page</i></a>
-              </h7>
-              <br></br>
+            <h7>
+              A meaningful first step that has application, however, is to detect its position
+              from a given image with color calibration to isolate the given object from the surroundings.
+            </h7>
+            <br></br>
 
+            <center>
+              <img class="responsive-img" width="600" src="images/hack112.png">
+            </center>
+            <br></br>
 
-              <br></br>
-              <h5>Kaggle Pneumonia Detection</h5>
+            <h7>
+              I further tested the feedback between the real time object detection and performance of a given task.
+            </h7>
+            <br></br>
 
-              <h7>
-                Further details of the project can be found on my github page 
-                <a href = "https://github.com/spartace98/Pneumonia-Detection" 
-                target="_blank" style = "color:orange"><i class="material-icons">find_in_page</i></a>
-              </h7>
-              <br></br>
+            <center>
+              <div class="video-container">
+                <iframe width="600" height="350" src="https://www.youtube.com/embed/GB3kflPI9Es" frameborder="0"
+                  allowfullscreen></iframe>
+              </div>
+            </center>
+            <br></br>
 
-
-            </div>
+            <h7>
+              My project has demonstrate that while it is possible to perform a task with object detection of a general
+              object,
+              further research can be done to improve the efficiency of this feedback.
+            </h7>
+            <br></br>
+          </div>
         </li>
         <li>
-          <div id = "simulations" class="collapsible-header"><i class="material-icons">whatshot</i><h6>Simulations</h6></div>
+          <div id="machine-learning" class="collapsible-header"><i class="material-icons">subtitles</i>
+            <h6>Machine Learning</h6>
+          </div>
+          <div class="collapsible-body">
+
+            <!-- NUS Internship -->
+            <h5>Analysing Functional Connectivity between Regions of Interests of the Human Brain</h5>
+            <h7>
+              Application of machine learning algorithms to
+              neuroscience has led to better understanding of the human brain.
+            </h7>
+            <br></br>
+
+            <h7>
+              Recent studies suggest that functional connectivity from
+              fMRI scans of the human brain provides a good way to analyse
+              brain activity.
+            </h7>
+            <br></br>
+
+            <h7>
+              I embarked on a project with Professor Thomas Yeo 
+              <a href="https://www.eng.nus.edu.sg/ece/staff/yeo-boon-thye-thomas/" style="color:#19CEE3"><i
+                class="material-icons">person</i></a>
+              from the Department of Electrical and Computer Engineering, 
+              National University of Singapore (NUS), to further study this 
+              relationship.
+            </h7>
+            <br></br>
+
+            <h7>
+              Further details of the project can be found on my github page
+              <a href="https://github.com/spartace98/NUS-Internship" target="_blank" style="color:orange"><i
+                  class="material-icons">find_in_page</i></a>
+            </h7>
+            <br></br>
+
+            <div class="container">
+              <img class="materialboxed" width="600" src="images/svr.gif" alt="animated">
+            </div>
+            <br></br>
+
+            <br></br>
+            <h5>Shoppee Data Science Competition</h5>
+
+            <h7>
+              We were given the text and images for products on a e-commerce website,
+              and were tasked to predict and categorise the product based on the available data.
+            </h7>
+            <br></br>
+
+            <h7>
+              Further details of the project can be found on my github page
+              <a href="https://github.com/spartace98/National-Data-Science-Challenge" target="_blank"
+                style="color:orange"><i class="material-icons">find_in_page</i></a>
+            </h7>
+            <br></br>
+
+            <br></br>
+            <h5>Kaggle Pneumonia Detection</h5>
+
+            <h7>
+              Further details of the project can be found on my github page
+              <a href="https://github.com/spartace98/Pneumonia-Detection" target="_blank" style="color:orange"><i
+                  class="material-icons">find_in_page</i></a>
+            </h7>
+            <br></br>
+
+
+          </div>
+        </li>
+        <li>
+          <div id="simulations" class="collapsible-header"><i class="material-icons">computer</i>
+            <h6>Simulations</h6>
+          </div>
           <div class="collapsible-body">
             <center>
               <b>Currently Unavailable: Verifying Intellectual Property Sharing Permissions</b>
@@ -313,109 +338,229 @@
     </div>
   </section>
 
-    <!-- Footer  -->
-    <footer class="page-footer teal lighten-2">
-      <div class="container">
-        <div id = "contact" class = "scrollspy"></div>
-          <div class="row">
-            <div class="col l6 s12">
-              <h5 class="white-text">Contact</h5>
-              <p class="grey-text text-lighten-4">
-                If you are interested to learn more about my work or would like to schedule an interview with me, do contact me through the links on the right!
-              </p>
-            </div>
-          <div class="col l4 offset-l2 s12">
-            <h5 class="white-text">Methods</h5>
-            <ul>
-              <div class = "row">
-                <!-- Email -->
-                <div class="col s4">
-                  <li>
-                    <a class="grey-text text-lighten-3" href="mailto:chaoli2@andrew.cmu.edu">
-                      <i class="small material-icons">email</i>
-                    </a>
-                  </li>
-                </div>
-                <!-- Contact Number -->
-                <div class="col s4">
-                  <li>
-                    <a class="grey-text text-lighten-3 modal-trigger" href="#phone">
-                      <i class="small material-icons">phone</i>
-                    </a>
-                  </li>
-                </div>
-                <!-- Robotics Institute Contact -->
-                <div class="col s4">
-                  <li>
-                    <a class="grey-text text-lighten-3" href="https://www.ri.cmu.edu/ri-people/chao-li/">
-                      <i class="small material-icons">work</i>
-                    </a>
-                  </li>
-                </div>
-              </div>
-            </ul>
-          </div>
-        </div>
-        </div>
-      </div>
-      <div class="footer-copyright">
-        <div class="container">
-          © Github Pages
-          <a class="grey-text text-lighten-4 right" href="#!"></a>
-        </div>
-      </div>
-    </footer>
+  <!-- Awards -->
+  <section id="awards" class="section scrollspy">
+    <div class="container">
+      <h3 class="center">
+        Awards
+      </h3>
+      <ul class="collection">
+        <li class="collection-item">
+          <center>
+            <i>15-122: Principles of Imperative Computation
+              <br>
+              <b>Top 4 Best Image Manipulation Class Competition (2020)</b>
+            </i>
+          </center>
+        </li>
+        <li class="collection-item">
+          <center>
+            <i>15-112: Fundamentals of Programming
+              <br>
+              <b>Hack 112 Top 30 Best Project (2019)</b>
+            </i>
+          </center>
+        </li>
+        <li class="collection-item">
+          <center>
+            <i>15-112: Fundamentals of Programming
+              <br>
+              <b>Nominated Final Term Project (2019)</b>
+            </i>
+          </center>
+        </li>
+        <li class="collection-item">
+          <center>
+            <i>Carngie Institute of Technology
+              <br>
+              <b>Dean's List for Academic Performance (Fall 2019, Spring 2020)</b>
+            </i>
+          </center>
+        </li>
+        <li class="collection-item">
+          <center>
+            <i>Singapore Armed Forces
+              <br>
+              <b>Outstanding Soldier in Performance and Conduct</b>
+            </i>
+          </center>
+        </li>
+        <li class="collection-item">
+          <center>
+            <i>Agency for Science, Technology and Research (A*STAR)
+              <br>
+              <b>National Science Scholarship (NSS) Award (2018)</b>
+            </i>
+          </center>
+        </li>
+        <li class="collection-item">
+          <center>
+            <i>Hwa Chong Institution
+              <br>
+              <b>Outstanding Student Award (2017)</b>
+            </i>
+          </center>
+        </li>
+        <li class="collection-item">
+          <center>
+            <i>Hwa Chong Institution
+              <br>
+              <b>Diploma with Distinction- top 1% in country (2016)</b>
+            </i>
+          </center>
+        </li>
+        <li class="collection-item">
+          <center>
+            <i>Ministry of Education
+              <br>
+              <b>Selected to study Higher Level University Physics</b>
+            </i>
+          </center>
+        </li>
+      </ul>
+    </div>
+  </section>
 
-    <!-- Contact Modal Structure -->
-    <div id="phone" class="modal">
-      <div class="modal-content">
-        <h4>Phone Number</h4>
-        <p>US Contact: +1 412-708-8343</p>
-        <p>Please do not contact me through my phone unless absoluetely necessary</p>
+  <!-- Mentors -->
+  <section id="mentors">
+    <div class="container">
+      <h3 class="center">
+        Credits
+      </h3>
+      <h6>
+        I would specially like to thank my mentors who have guided and encouraged me to
+        pursue my aspiration to do good research.
+      </h6>
+
+      <center>
+        <p>
+          Comparing Classical Machine Learning Techniques in regresssion analysis of MRI data
+          <br><i>B.T Thomas Yeo (NUS ECE Department 2019)</i></br>
+        </p>
+
+        <p>
+          Image Processing of Micromagnetics Simulations and Experiments
+          <br><i>Anjan Soumyanarayanan (A*Star IMRE 2019-)</i></br>
+        </p>
+
+        <p>
+          Sensor Calibration and Computer Vision for Soft Robotics Applications
+          <br><i>Nancy Pollard (CMU Robotics Institute, Graphics Lab 2019-)</i></br>
+        </p>
+      </center>
+    </div>
+  </section>
+
+  <!-- Footer  -->
+  <footer class="page-footer teal lighten-2">
+    <div class="container">
+      <div id="contact" class="scrollspy"></div>
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">Contact</h5>
+          <p class="grey-text text-lighten-4">
+            If you are interested to learn more about my work and would like to 
+            schedule an interview with me, do contact me through the links on 
+            the right!
+          </p>
+        </div>
+        <div class="col l4 offset-l2 s12">
+          <h5 class="white-text">Methods</h5>
+          <ul>
+            <div class="row">
+              <!-- Email -->
+              <div class="col s4">
+                <li>
+                  <a class="grey-text text-lighten-3" href="mailto:chaoli2@andrew.cmu.edu">
+                    <i class="small material-icons">email</i>
+                  </a>
+                </li>
+              </div>
+              <!-- Contact Number -->
+              <div class="col s4">
+                <li>
+                  <a class="grey-text text-lighten-3 modal-trigger" href="#phone">
+                    <i class="small material-icons">phone</i>
+                  </a>
+                </li>
+              </div>
+              <!-- Robotics Institute Contact -->
+              <div class="col s4">
+                <li>
+                  <a class="grey-text text-lighten-3" href="https://www.ri.cmu.edu/ri-people/chao-li/">
+                    <i class="small material-icons">work</i>
+                  </a>
+                </li>
+              </div>
+            </div>
+          </ul>
+        </div>
       </div>
     </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+        © Github Pages
+        <a class="grey-text text-lighten-4 right" href="#!"></a>
+      </div>
+    </div>
+  </footer>
 
-    <!--JavaScript at end of body for optimized loading-->
-    <script type="text/javascript" src="js/materialize.min.js"></script>
+  <!-- Contact Modal Structure -->
+  <div id="phone" class="modal">
+    <div class="modal-content">
+      <h4>Phone Number</h4>
+      <p>US Contact: +1 412-708-8343</p>
+      <p>Please do not contact me through my phone unless absoluetely necessary</p>
+    </div>
+  </div>
 
-    <script>
-        // Sidenav
-        const sideNav = document.querySelectorAll(".sidenav");
-        M.Sidenav.init(sideNav, {
-          onOpenStart: true,
-        });
+  <!--JavaScript at end of body for optimized loading-->
+  <script type="text/javascript" src="js/materialize.min.js"></script>
 
-        // Slider
-        const slider = document.querySelectorAll(".slider");
-        M.Slider.init(slider, {
-          indicators: true,
-          height: 600,
-          transition: 500,
-          interval: 6000,
-        });
+  <script>
+    // Sidenav
+    const sideNav = document.querySelectorAll(".sidenav");
+    M.Sidenav.init(sideNav, {
+      onOpenStart: true,
+    });
 
-        // Scrollspy
-        const scrollspy = document.querySelectorAll(".scrollspy");
-        M.ScrollSpy.init(scrollspy, {});
+    // Slider
+    const slider = document.querySelectorAll(".slider");
+    M.Slider.init(slider, {
+      indicators: true,
+      height: 600,
+      transition: 500,
+      interval: 6000,
+    });
 
-        // collapsible
-        const collapsible = document.querySelectorAll(".collapsible");
-        M.Collapsible.init(collapsible, {});
-        $("[data-click]").on("click", function (e) {
-          $( $(this).attr("href") ).trigger("click");
-        });
+    // Scrollspy
+    const scrollspy = document.querySelectorAll(".scrollspy");
+    M.ScrollSpy.init(scrollspy, {});
 
-        // Modal
-        const modal = document.querySelector(".modal");
-        M.Modal.init(modal, {});
+    // collapsible
+    const collapsible = document.querySelectorAll(".collapsible");
+    M.Collapsible.init(collapsible, {});
+    $("[data-click]").on("click", function (e) {
+      $($(this).attr("href")).trigger("click");
+    });
 
-        // Material Boxed
-        const materialboxed = document.querySelectorAll(".materialboxed");
-        M.Materialbox.init(materialboxed, {});
-      </script>
-    </body>
+    // Modal
+    const modal = document.querySelector(".modal");
+    M.Modal.init(modal, {});
 
-    </html>    
+    // Material Boxed
+    const materialboxed = document.querySelectorAll(".materialboxed");
+    M.Materialbox.init(materialboxed, {});
 
+    // Carousel
+    const carousel = document.querySelectorAll(".carousel");
+    M.Carousel.init(carousel, {
+      fullWidth: true,
+      indicators: true,
+    });
 
+  </script>
+</body>
 
+</html>
