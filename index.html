@@ -25,13 +25,16 @@
             <i class="material-icons">menu</i>
           </a>
           <ul class = "right hide-on-med-and-down">
-            <li class = "tab col s4">
+            <li class = "tab col s3">
               <a href="#about">About</a>
             </li>
-            <li class = "tab col s4">
+            <li class = "tab col s3">
               <a href="#projects">Projects</a>
             </li>
-            <li class = "tab col s4">
+            <li class = "tab col s3">
+              <a href="#awards">Awards</a>
+            </li>
+            <li class = "tab col s3">
               <a href="#contact">Contact</a>
             </li>
           </ul>
@@ -84,7 +87,7 @@
         <!-- random image -->
         <div class="caption center-align">
           <h3>Machine Learning</h3>
-          <h5 class="light grey-text text-lighten-3 hide-on-small-only">Understanding relationships of natural processes</h5>
+          <h5 class="light grey-text text-lighten-3 hide-on-small-only">Uncovering relationships of natural processes</h5>
         </div>
       </li>
     </ul>
@@ -102,10 +105,10 @@
             I am a student from Carnegie Mellon University, studying Electrical and Computer Engineering.
           </p>
           <p class="flow-text">
-            I am passionate about using high performance computations to visualise and understand the world around us better.
+            My passion is to use high performing computations to better visualise and understand the world around us.
           </p>
           <p class="flow-text">
-            I specialise in using image Analysis, machine learning and simulations.
+            I specialise in Image Analysis, Machine Learning and Simulations.
           </p>
         </center>
       </div>
@@ -125,16 +128,16 @@
 
       <div class = "col s12 m4">
         <div class = "card-panel">
-          <i class = "material-icons large grey-text">subtitles</i>
-          <h4>Machine Learning</h4>
+          <a href = "#machine-learning" data-click = "true"><i class = "material-icons large grey-text">subtitles</i></a>
+          <a href = "#machine-learning" style = "color:black" data-click = "true"><h4>Machine Learning</h4></a>
           <p>Classical ML & Neural Networks</p>
         </div>
       </div>
 
       <div class = "col s12 m4">
         <div class = "card-panel">
-          <i class = "material-icons large grey-text">computer</i>
-          <h4>Simulations</h4>
+          <a href = "#simulations" data-click = "true"><i class = "material-icons large grey-text">computer</i></a>
+          <a href = "#simulations" style = "color:black" data-click = "true"><h4>Simulations</h4></a>
           <p>Magnetic Skyrmions</p>
         </div>
       </div>
@@ -144,15 +147,20 @@
   <!-- Projects -->
   <section id = "projects" class = "section scrollspy">
     <div class = "container">
-      <h4 class = "center">
+      <h3 class = "center">
         Projects
-      </h4>
+      </h3>
       <ul class="collapsible popout">
         <li>
           <div id = "image-analysis" class="collapsible-header"><i class="material-icons">photo</i><h6>Image Analysis<h6></div>
             <div class="collapsible-body">
+              
+              <!-- CMU Research -->
+              <h5>April Tag Detection for Soft Robotics Hand Manipulations</h5>
               <h7>
-                I have been working with Professor Nancy Pollard from the Robotics Institute in designing soft robotics hand for dexterous manipulations.
+                I have been working with Professor Nancy Pollard 
+                <a href = "http://graphics.cs.cmu.edu/nsp/index.html" style = "color:black"><i class="material-icons">person</i></a>
+                from the Robotics Institute to design a soft robotics hand for dexterous manipulations.
               </h7>
               <br></br>
 
@@ -181,31 +189,141 @@
                   <iframe width="600" height="350" src="https://www.youtube.com/embed/h9V9XSQQWD8" frameborder="0" allowfullscreen></iframe>
                 </div>
               </center>
+              <br></br>
+
+              <h5>Object Detection for General Applications</h5>
+              <h7>
+                It is useful to detect any given object for general applications. 
+              </h7>
+              <br></br>
+
+              <h7>
+                For objects with isolated color, without machine learning techniques to understand the texture, it is
+                difficult to analyse the angle of the given object. 
+              </h7>
+              <br></br>
+
+              <h7>
+                A meaningful first step that has application, however, is to detect its position 
+                from a given image with color calibration to isolate the given object from the surroundings. 
+              </h7>
+              <br></br>
+
+              <center>
+                <img class="responsive-img" width = "600" src="images/hack112.png">
+              </center>
+              <br></br>
+
+              <h7>
+                I further tested the feedback between the real time object detection and performance of a given task. 
+              </h7>
+              <br></br>
+
+              <center>
+                <div class="video-container">
+                  <iframe width="600" height="350" src="https://www.youtube.com/embed/GB3kflPI9Es" frameborder="0" allowfullscreen></iframe>
+                </div>
+              </center>
+              <br></br>
+
+              <h7>
+                My project has demonstrate that while it is possible to perform a task with object detection of a general object, 
+                further research can be done to improve the efficiency of this feedback. 
+              </h7>
+              <br></br>
+            </div>
+        </li>
+        <li>
+          <div id = "machine-learning" class="collapsible-header"><i class="material-icons">subtitles</i><h6>Machine Learning</h6></div>
+            <div class="collapsible-body">
+
+              <!-- NUS Internship -->
+              <h5>Analysing Functional Connectivity between Regions of Interests of the Human Brain</h5>
+              <h7>
+                Application of machine learning algorithms to 
+                neuroscience has led to better understanding of the human brain. 
+              </h7>
+              <br></br>
+              
+              <h7>
+                Recent studies suggest that functional connectivity from 
+                fMRI scans of the human brain provides a good way to analyse 
+                brain activity.
+              </h7>
+              <br></br>
+
+              <h7>
+                I embarked on a project with Professor Thomas Yeo from the 
+                ECE Department, National University of Singapore, to further 
+                study this relationship
+              </h7>
+              <br></br>
+
+              <h7>
+                Further details of the project can be found on my github page 
+                <a href = "https://github.com/spartace98/NUS-Internship" 
+                target="_blank" style = "color:orange"><i class="material-icons">find_in_page</i></a>
+              </h7>
+              <br></br>
+
+              <div class = "container">
+                <img class="materialboxed" width="600" src="images/svr.gif" alt="animated">
+              </div>
+              <br></br>
+
+              <br></br>
+              <h5>Shoppee Data Science Competition</h5>
+
+              <h7>
+                We were given the text and images for products on a e-commerce website, 
+                and were tasked to predict and categorise the product based on the available data. 
+              </h7>
+              <br></br>
+
+              <h7>
+                Further details of the project can be found on my github page 
+                <a href = "https://github.com/spartace98/National-Data-Science-Challenge" 
+                target="_blank" style = "color:orange"><i class="material-icons">find_in_page</i></a>
+              </h7>
+              <br></br>
+
+
+              <br></br>
+              <h5>Kaggle Pneumonia Detection</h5>
+
+              <h7>
+                Further details of the project can be found on my github page 
+                <a href = "https://github.com/spartace98/Pneumonia-Detection" 
+                target="_blank" style = "color:orange"><i class="material-icons">find_in_page</i></a>
+              </h7>
+              <br></br>
+
 
             </div>
-          </li>
-          <li>
-            <div class="collapsible-header"><i class="material-icons">place</i><h6>Machine Learning</h6></div>
-            <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
-          </li>
-          <li>
-            <div class="collapsible-header"><i class="material-icons">whatshot</i><h6>Simulations</h6></div>
-            <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
-          </li>
-        </ul>
-      </div>
-    </section>
+        </li>
+        <li>
+          <div id = "simulations" class="collapsible-header"><i class="material-icons">whatshot</i><h6>Simulations</h6></div>
+          <div class="collapsible-body">
+            <center>
+              <b>Currently Unavailable: Verifying Intellectual Property Sharing Permissions</b>
+            </center>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </section>
 
     <!-- Footer  -->
-    <footer class="page-foote teal lighten-2">
+    <footer class="page-footer teal lighten-2">
       <div class="container">
-        <div class="row">
-          <div class="col l6 s12">
-            <h5 class="white-text">Contact</h5>
-            <p class="grey-text text-lighten-4">
-              If you are interested to learn more about my work or would like to schedule an interview with me, do contact me through the links on the right!
-            </p>
-          </div>
+        <div id = "contact" class = "scrollspy"></div>
+          <div class="row">
+            <div class="col l6 s12">
+              <h5 class="white-text">Contact</h5>
+              <p class="grey-text text-lighten-4">
+                If you are interested to learn more about my work or would like to schedule an interview with me, do contact me through the links on the right!
+              </p>
+            </div>
           <div class="col l4 offset-l2 s12">
             <h5 class="white-text">Methods</h5>
             <ul>
@@ -238,11 +356,12 @@
             </ul>
           </div>
         </div>
+        </div>
       </div>
       <div class="footer-copyright">
         <div class="container">
-          © 2014 Copyright Text
-          <!-- <a class="grey-text text-lighten-4 right" href="#!">More Links</a> -->
+          © Github Pages
+          <a class="grey-text text-lighten-4 right" href="#!"></a>
         </div>
       </div>
     </footer>
