@@ -2,708 +2,623 @@
 <html>
 
 <head>
-  <!--Import Google Icon Font-->
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <!--Import materialize.css-->
-  <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
-  <!-- Font -->
-  <!-- <script src="https://kit.fontawesome.com/9716671d02.js" crossorigin="anonymous"></script> -->
-  <!-- JQuery -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
-  <!--Let browser know website is optimized for mobile-->
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.css" media="screen,projection" />
+    <!-- Import internal css definitions -->
+    <link rel="stylesheet" type="text/css" href="css/internal-styles.css">
+
+    <!-- Font -->
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@200&display=swap" rel="stylesheet">
+    <!-- JQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 </head>
 
 <body id="home" class="scrollspy">
-  <!-- Navbar goes here -->
-  <div class="navbar-fixed">
-    <nav class="teal lighten-2">
-      <div class="container">
-        <div class="nav-wrapper">
-          <a href="#" class="brand-logo">Ideation</a>
-          <a href="#" data-target="mobile-nav" class="sidenav-trigger">
-            <i class="material-icons">menu</i>
-          </a>
-          <ul class="right hide-on-med-and-down">
-            <li class="tab col s2">
-              <a href="#about">About</a>
-            </li>
-            <li class="tab col s2">
-              <a href="#projects">Projects</a>
-            </li>
-            <li class="tab col s2">
-              <a href="#awards">Awards</a>
-            </li>
-            <li class="tab col s2">
-              <a href="resume-lichao.docx" download>Resume</a>
-            </li>
-            <li class="tab col s2">
-              <a href="#credits">Credits</a>
-            </li>
-            <li class="tab col s2">
-              <a href="#contact">Contact</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-  </div>
+    <!-- Navbar goes here -->
+    <div class="navbar-fixed z-depth-5">
+        <nav class="amber lighten-4">
+            <div class="container">
+                <div class="nav-wrapper">
+                    <a href="#" class="header-logo">Ideation</a>
+                    <a href="#" data-target="mobile-nav" class="sidenav-trigger">
+                        <i class="material-icons">menu</i>
+                    </a>
+                    <ul class="right hide-on-med-and-down">
+                        <li class="tab col s2">
+                            <a href="#about" class="header">About</a>
+                        </li>
+                        <li class="tab col s2">
+                            <a href="#projects" class="header">Projects</a>
+                        </li>
+                        <li class="tab col s2">
+                            <a href="#awards" class="header">Awards</a>
+                        </li>
+                        <li class="tab col s2">
+                            <a href="resume-lichao.docx" download class="header">Resume</a>
+                        </li>
+                        <li class="tab col s2">
+                            <a href="#credits" class="header">Credits</a>
+                        </li>
+                        <li class="tab col s2">
+                            <a href="#contact" class="header">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
 
-  <ul class="sidenav" id="mobile-nav">
-    <li>
-      <a class="sidenav-close" href="#about">About</a>
-    </li>
-    <li>
-      <a class="sidenav-close" href="#projects">Projects</a>
-    </li>
-    <li>
-      <a class="sidenav-close" href="#awards">Awards</a>
-    </li>
-    <li>
-      <a class="sidenav-close" href="resume-lichao.docx" download>Resume</a>
-    </li>
-    <li>
-      <a class="sidenav-close" href="#credits">Credits</a>
-    </li>
-    <li>
-      <a class="sidenav-close" href="#contact">Contact</a>
-    </li>
-  </ul>
-
-  <!-- Slider  -->
-  <section class="slider">
-    <ul class="slides">
-      <li>
-        <!-- Photo of myself -->
-        <img src="images/portrait2.jpeg">
-        <div class="caption left-align">
-          <h3 class>An Electrical & Computer<br> Engineering Student</h3>
-          <h5 class="light grey-text text-lighten-3 hide-on-small-only">From Carnegie Mellon University</h5>
-        </div>
-      </li>
-      <li>
-        <!-- Camera Calibration -->
-        <img src="images/calibration.jpg">
-        <div class="caption right-align">
-          <h3>Computer Vision</h3>
-          <h5 class="light grey-text text-lighten-3 hide-on-small-only">Uncovering new methods <br> to visualise the
-            world</h5>
-        </div>
-      </li>
-
-      <li>
-        <img src="images/brain.jpg">
-        <!-- NUS Internship -->
-        <div class="caption center-align">
-          <h3>Machine Learning</h3>
-          <h5 class="light grey-text text-lighten-3 hide-on-small-only">Uncovering relationships of natural processes
-          </h5>
-        </div>
-      </li>
-
-      <li>
-        <!-- Magnetic Skyrmions -->
-        <img src="images/skyrmions.jpg">
-        <div class="caption right-align">
-          <h3>Simulations</h3>
-          <h5 class="light grey-text text-lighten-3 hide-on-small-only">Explaining physical phenomemons <br> with high
-            performance computations</h5>
-        </div>
-      </li>
+    <ul class="sidenav" id="mobile-nav">
+        <li>
+            <a class="sidenav-close" href="#about">About</a>
+        </li>
+        <li>
+            <a class="sidenav-close" href="#projects">Projects</a>
+        </li>
+        <li>
+            <a class="sidenav-close" href="#awards">Awards</a>
+        </li>
+        <li>
+            <a class="sidenav-close" href="resume-lichao.docx" download>Resume</a>
+        </li>
+        <li>
+            <a class="sidenav-close" href="#credits">Credits</a>
+        </li>
+        <li>
+            <a class="sidenav-close" href="#contact">Contact</a>
+        </li>
     </ul>
-  </section>
 
-  <!-- About Section -->
-  <section id="about" class="section scrollspy">
-    <div class="container">
-      <h3 class="center">
-        About
-      </h3>
-      <div class="container">
-        <center>
-          <p class="flow-text">
-            I am a student from Carnegie Mellon University, studying Electrical and Computer Engineering.
-          </p>
-          <p class="flow-text">
-            My passion is to use high performing computations to better visualise and understand the world around us.
-          </p>
-          <p class="flow-text">
-            I specialise in Computer Vision, Machine Learning and Simulations.
-          </p>
-        </center>
-      </div>
-    </div>
-  </section>
-
-  <!-- Icons -->
-  <section class="section section-icons grey lighten-4 center">
-    <div class="row">
-      <div class="col s12 m4">
-        <div class="card-panel">
-          <a href="#computer-vision" data-click="true"><i class="material-icons large grey-text">insert_photo</i></a>
-          <a href="#computer-vision" style="color:black" data-click="true">
-            <h4>Computer Vision</h4>
-          </a>
-          <p>Image Filtering, Object Detection</p>
-        </div>
-      </div>
-
-      <div class="col s12 m4">
-        <div class="card-panel">
-          <a href="#machine-learning" data-click="true"><i class="material-icons large grey-text">subtitles</i></a>
-          <a href="#machine-learning" style="color:black" data-click="true">
-            <h4>Machine Learning</h4>
-          </a>
-          <p>Classical ML & Neural Networks</p>
-        </div>
-      </div>
-
-      <div class="col s12 m4">
-        <div class="card-panel">
-          <a href="#simulations" data-click="true"><i class="material-icons large grey-text">computer</i></a>
-          <a href="#simulations" style="color:black" data-click="true">
-            <h4>Simulations</h4>
-          </a>
-          <p>Magnetic Skyrmions</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Projects -->
-  <section id="projects" class="section scrollspy">
-    <div class="container">
-      <h3 class="center">
-        Projects
-      </h3>
-      <ul class="collapsible">
-
-        <!-- Computer Vision -->
-        <li>
-          <div id="computer-vision" class="collapsible-header"><i class="material-icons">photo</i>
-            <h6>Computer Vision<h6>
-          </div>
-          <div class="collapsible-body">
-            <!-- CMU Research and 112 Term Project -->
-            <ul class="collapsible popout">
-              <li>
-                <div class="collapsible-header"><i class="material-icons">fingerprint</i>April Tag Detection for Soft
-                  Robotics Hand Manipulations</div>
-                <div class="collapsible-body">
-                  <h7>
-                    I have been working with Professor Nancy Pollard
-                    <a href="http://graphics.cs.cmu.edu/nsp/index.html" style="color:#19CEE3"><i
-                        class="material-icons">person</i></a>
-                    from the Robotics Institute to design a soft robotics hand for dexterous manipulations.
-                  </h7>
-                  <br></br>
-
-                  <h7>
-                    In order to test the robotic's hand ability to grab and perform manipulations to the object, the
-                    hand must
-                    be able to detect the object.
-                  </h7>
-                  <br></br>
-
-                  <h7>
-                    April Tags are unique and easily detectable with any commerical camera. Current libraries are
-                    capable of
-                    providing dimensions and position of the detected tag, with careful camera calibration.
-                  </h7>
-                  <br></br>
-
-                  <center>
-                    <img class="responsive-img" width="600" src="images/apriltag.png">
-                  </center>
-                  <br></br>
-
-                  <h7>
-                    To test feedback between the camera and the computer, I simulated a complex racing game which can be
-                    controlled by the movements of the April Tag.
-                  </h7>
-                  <br></br>
-
-                  <center>
-                    <div class="video-container">
-                      <iframe width="600" height="350" src="https://www.youtube.com/embed/h9V9XSQQWD8" frameborder="0"
-                        allowfullscreen></iframe>
-                    </div>
-                  </center>
-                  <br></br>
+    <!-- Slider  -->
+    <section class="slider">
+        <ul class="slides">
+            <li>
+                <!-- Photo of myself -->
+                <img src="images/portrait2.jpeg">
+                <div class="caption left-align">
+                    <h3 class>An Electrical & Computer<br> Engineering Student</h3>
+                    <h5 class="light grey-text text-lighten-3 hide-on-small-only">From Carnegie Mellon University</h5>
                 </div>
-              </li>
-
-              <!-- Hack 112 -->
-              <li>
-                <div class="collapsible-header"><i class="material-icons">camera</i>Object Detection for General
-                  Applications</div>
-                <div class="collapsible-body">
-                  <h7>
-                    It is useful to detect any given object for general applications.
-                  </h7>
-                  <br></br>
-
-                  <h7>
-                    For objects with isolated color, without machine learning techniques to understand the texture, it
-                    is
-                    difficult to analyse the angle of the given object.
-                  </h7>
-                  <br></br>
-
-                  <h7>
-                    A meaningful first step that has application, however, is to detect its position
-                    from a given image with color calibration to isolate the given object from the surroundings.
-                  </h7>
-                  <br></br>
-
-                  <center>
-                    <img class="responsive-img" width="600" src="images/hack112.png">
-                  </center>
-                  <br></br>
-
-                  <h7>
-                    I further tested the feedback between the real time object detection and performance of a given
-                    task.
-                  </h7>
-                  <br></br>
-
-                  <center>
-                    <div class="video-container">
-                      <iframe width="600" height="350" src="https://www.youtube.com/embed/GB3kflPI9Es" frameborder="0"
-                        allowfullscreen></iframe>
-                    </div>
-                  </center>
-                  <br></br>
-
-                  <h7>
-                    My project has demonstrate that while it is possible to perform a task with object detection of a
-                    general
-                    object,
-                    further research can be done to improve the efficiency of this feedback.
-                  </h7>
+            </li>
+            <li>
+                <!-- Camera Calibration -->
+                <img src="images/calibration.jpg">
+                <div class="caption right-align">
+                    <h3>Computer Vision</h3>
+                    <h5 class="light grey-text text-lighten-3 hide-on-small-only">Uncovering new methods <br> to visualise the world
+                    </h5>
                 </div>
-              </li>
-            </ul>
-          </div>
-        </li>
+            </li>
 
-        <!-- Machine Learning -->
-        <li>
-          <div id="machine-learning" class="collapsible-header"><i class="material-icons">keyboard</i>
-            <h6>Machine Learning</h6>
-          </div>
-          <div class="collapsible-body">
-            <ul class="collapsible popout">
+            <li>
+                <img src="images/brain.jpg">
+                <!-- NUS Internship -->
+                <div class="caption center-align">
+                    <h3>Machine Learning</h3>
+                    <h5 class="light grey-text text-lighten-3 hide-on-small-only">Uncovering relationships of natural processes
+                    </h5>
+                </div>
+            </li>
 
-              <!-- NUS Internship -->
-              <li>
-                <div class="collapsible-header"><i class="material-icons">face</i>Analysing Functional
-                  Connectivity between Regions of Interests of the Human Brain</div>
-                <div class="collapsible-body">
-                  <h7>
-                    Application of machine learning algorithms to
-                    neuroscience has led to better understanding of the human brain.
-                  </h7>
-                  <br></br>
+            <li>
+                <!-- Magnetic Skyrmions -->
+                <img src="images/skyrmions.jpg">
+                <div class="caption right-align">
+                    <h3>Simulations</h3>
+                    <h5 class="light grey-text text-lighten-3 hide-on-small-only">Explaining physical phenomemons <br> with high performance computations</h5>
+                </div>
+            </li>
+        </ul>
+    </section>
 
-                  <h7>
-                    Recent studies suggest that functional connectivity from
-                    fMRI scans of the human brain provides a good way to analyse
-                    brain activity.
-                  </h7>
-                  <br></br>
+    <!-- About Section -->
+    <section id="about" class="section scrollspy">
+        <div class="container">
+            <h3 class="center">
+                About
+            </h3>
+            <div class="container">
+                <center>
+                    <p class="flow-text">
+                        I am a student from Carnegie Mellon University, studying Electrical and Computer Engineering.
+                    </p>
+                    <p class="flow-text">
+                        My passion is to use high performing computations to better visualise and understand the world around us.
+                    </p>
+                    <p class="flow-text">
+                        I specialise in Computer Vision, Machine Learning and Simulations.
+                    </p>
+                </center>
+            </div>
+        </div>
+    </section>
 
-                  <h7>
-                    I embarked on a project with Professor Thomas Yeo
-                    <a href="https://www.eng.nus.edu.sg/ece/staff/yeo-boon-thye-thomas/" style="color:#19CEE3"><i
-                        class="material-icons">person</i></a>
-                    from the Department of Electrical and Computer Engineering,
-                    National University of Singapore (NUS), to further study this
-                    relationship.
-                  </h7>
-                  <br></br>
+    <!-- Icons -->
+    <section class="section section-icons center">
+        <div class="row">
+            <div class="col s12 m4">
+                <div class="card-panel">
+                    <a href="#computer-vision" data-click="true"><i class="material-icons large red-text text-accent-1">insert_photo</i></a>
+                    <a href="#computer-vision" style="color:#ff5252" data-click="true">
+                        <h4 class = "card-text">Computer Vision</h4>
+                    </a>
+                    <p>Image Filtering, Object Detection</p>
+                </div>
+            </div>
 
-                  <h7>
-                    Further details of the project can be found on my github page
-                    <a href="https://github.com/spartace98/NUS-Internship" target="_blank" style="color:orange"><i
+            <div class="col s12 m4">
+                <div class="card-panel">
+                    <a href="#machine-learning" data-click="true"><i class="material-icons large red-text text-accent-1">subtitles</i></a>
+                    <a href="#machine-learning" style="color:#ff5252" data-click="true">
+                        <h4 class = "card-text">Machine Learning</h4>
+                    </a>
+                    <p>Classical ML & Neural Networks</p>
+                </div>
+            </div>
+
+            <div class="col s12 m4">
+                <div class="card-panel">
+                    <a href="#simulations" data-click="true"><i class="material-icons large red-text text-accent-1">computer</i></a>
+                    <a href="#simulations" style="color:#ff5252" data-click="true">
+                        <h4 class = "card-text">Simulations</h4>
+                    </a>
+                    <p>Magnetic Skyrmions</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="section scrollspy">
+        <div class="container">
+            <h3 class="center">
+                Projects
+            </h3>
+            <ul class="collapsible" style = "background-color: #f0f4c3;">
+
+                <!-- Computer Vision -->
+                <li>
+                    <div id="computer-vision" class="collapsible-header"><i class="material-icons">photo</i>
+                        <h6>Computer Vision
+                            <h6>
+                    </div>
+                    <div class="collapsible-body">
+                        <!-- CMU Research and 112 Term Project -->
+                        <ul class="collapsible popout">
+                            <li>
+                                <div class="collapsible-header"><i class="material-icons">fingerprint</i>April Tag Detection for Soft Robotics Hand Manipulations</div>
+                                <div class="collapsible-body">
+                                    <h7>
+                                        I have been working with Professor Nancy Pollard
+                                        <a href="http://graphics.cs.cmu.edu/nsp/index.html" style="color:#19CEE3"><i
+                        class="material-icons">person</i></a> from the Robotics Institute to design a soft robotics hand for dexterous manipulations.
+                                    </h7>
+                                    <br></br>
+
+                                    <h7>
+                                        In order to test the robotic's hand ability to grab and perform manipulations to the object, the hand must be able to detect the object.
+                                    </h7>
+                                    <br></br>
+
+                                    <h7>
+                                        April Tags are unique and easily detectable with any commerical camera. Current libraries are capable of providing dimensions and position of the detected tag, with careful camera calibration.
+                                    </h7>
+                                    <br></br>
+
+                                    <center>
+                                        <img class="responsive-img" width="600" src="images/apriltag.png">
+                                    </center>
+                                    <br></br>
+
+                                    <h7>
+                                        To test feedback between the camera and the computer, I simulated a complex racing game which can be controlled by the movements of the April Tag.
+                                    </h7>
+                                    <br></br>
+
+                                    <center>
+                                        <div class="video-container">
+                                            <iframe width="600" height="350" src="https://www.youtube.com/embed/h9V9XSQQWD8" frameborder="0" allowfullscreen></iframe>
+                                        </div>
+                                    </center>
+                                    <br></br>
+                                </div>
+                            </li>
+
+                            <!-- Hack 112 -->
+                            <li>
+                                <div class="collapsible-header"><i class="material-icons">camera</i>Object Detection for General Applications
+                                </div>
+                                <div class="collapsible-body">
+                                    <h7>
+                                        It is useful to detect any given object for general applications.
+                                    </h7>
+                                    <br></br>
+
+                                    <h7>
+                                        For objects with isolated color, without machine learning techniques to understand the texture, it is difficult to analyse the angle of the given object.
+                                    </h7>
+                                    <br></br>
+
+                                    <h7>
+                                        A meaningful first step that has application, however, is to detect its position from a given image with color calibration to isolate the given object from the surroundings.
+                                    </h7>
+                                    <br></br>
+
+                                    <center>
+                                        <img class="responsive-img" width="600" src="images/hack112.png">
+                                    </center>
+                                    <br></br>
+
+                                    <h7>
+                                        I further tested the feedback between the real time object detection and performance of a given task.
+                                    </h7>
+                                    <br></br>
+
+                                    <center>
+                                        <div class="video-container">
+                                            <iframe width="600" height="350" src="https://www.youtube.com/embed/GB3kflPI9Es" frameborder="0" allowfullscreen></iframe>
+                                        </div>
+                                    </center>
+                                    <br></br>
+
+                                    <h7>
+                                        My project has demonstrate that while it is possible to perform a task with object detection of a general object, further research can be done to improve the efficiency of this feedback.
+                                    </h7>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+
+                <!-- Machine Learning -->
+                <li>
+                    <div id="machine-learning" class="collapsible-header"><i class="material-icons">keyboard</i>
+                        <h6>Machine Learning</h6>
+                    </div>
+                    <div class="collapsible-body">
+                        <ul class="collapsible popout">
+
+                            <!-- NUS Internship -->
+                            <li>
+                                <div class="collapsible-header"><i class="material-icons">face</i>Analysing Functional Connectivity between Regions of Interests of the Human Brain</div>
+                                <div class="collapsible-body">
+                                    <h7>
+                                        Application of machine learning algorithms to neuroscience has led to better understanding of the human brain.
+                                    </h7>
+                                    <br></br>
+
+                                    <h7>
+                                        Recent studies suggest that functional connectivity from fMRI scans of the human brain provides a good way to analyse brain activity.
+                                    </h7>
+                                    <br></br>
+
+                                    <h7>
+                                        I embarked on a project with Professor Thomas Yeo
+                                        <a href="https://www.eng.nus.edu.sg/ece/staff/yeo-boon-thye-thomas/" style="color:#19CEE3"><i
+                        class="material-icons">person</i></a> from the Department of Electrical and Computer Engineering, National University of Singapore (NUS), to further study this relationship.
+                                    </h7>
+                                    <br></br>
+
+                                    <h7>
+                                        Further details of the project can be found on my github page
+                                        <a href="https://github.com/spartace98/NUS-Internship" target="_blank" style="color:orange"><i
                         class="material-icons">find_in_page</i></a>
-                  </h7>
-                  <br></br>
+                                    </h7>
+                                    <br></br>
 
-                  <div class="container">
-                    <img class="materialboxed" width="600" src="images/svr.gif" alt="animated">
-                  </div>
-                </div>
-              </li>
+                                    <div class="container">
+                                        <img class="materialboxed" width="600" src="images/svr.gif" alt="animated">
+                                    </div>
+                                </div>
+                            </li>
 
-              <!-- Shopee Data Science Competition-->
-              <li>
-                <div class="collapsible-header"><i class="material-icons">shopping_cart</i>Shoppee Data Science Competition
-                </div>
-                <div class="collapsible-body">
-                  <h7>
-                    We were given the text and images for products on a e-commerce website,
-                    and were tasked to predict and categorise the product based on the available data.
-                  </h7>
-                  <br></br>
+                            <!-- Shopee Data Science Competition-->
+                            <li>
+                                <div class="collapsible-header"><i class="material-icons">shopping_cart</i>Shoppee Data Science Competition
+                                </div>
+                                <div class="collapsible-body">
+                                    <h7>
+                                        We were given the text and images for products on a e-commerce website, and were tasked to predict and categorise the product based on the available data.
+                                    </h7>
+                                    <br></br>
 
-                  <h7>
-                    Further details of the project can be found on my github page
-                    <a href="https://github.com/spartace98/National-Data-Science-Challenge" target="_blank"
-                      style="color:orange"><i class="material-icons">find_in_page</i></a>
-                  </h7>
-                </div>
-              </li>
+                                    <h7>
+                                        Further details of the project can be found on my github page
+                                        <a href="https://github.com/spartace98/National-Data-Science-Challenge" target="_blank" style="color:orange"><i class="material-icons">find_in_page</i></a>
+                                    </h7>
+                                </div>
+                            </li>
 
-              <!-- Kaggle Image Recognition Unsupervised Learning-->
-              <li>
-                <div class="collapsible-header"><i class="material-icons">local_hospital</i>Kaggle Pneumonia Detection</div>
-                <div class="collapsible-body">
-                  <h7>
-                    Machine Learning techniques provide medical professionals with
-                    more accurate and reliable tool for pneumonia diagnosis in contrast
-                    with manual diagnosis by sight.
-                  </h7>
+                            <!-- Kaggle Image Recognition Unsupervised Learning-->
+                            <li>
+                                <div class="collapsible-header"><i class="material-icons">local_hospital</i>Kaggle Pneumonia Detection</div>
+                                <div class="collapsible-body">
+                                    <h7>
+                                        Machine Learning techniques provide medical professionals with more accurate and reliable tool for pneumonia diagnosis in contrast with manual diagnosis by sight.
+                                    </h7>
 
-                  <div class="container">
-                    <img class="materialboxed" width="600" src="images/pneumonia.jpeg">
-                  </div>
-                  <br></br>
+                                    <div class="container">
+                                        <img class="materialboxed" width="600" src="images/pneumonia.jpeg">
+                                    </div>
+                                    <br></br>
 
-                  <h7>
-                    My model was able to reach a peak of 93.1% prediction accuracy,
-                    which is significanly higher than the 72.3% diagnosis accuracy of
-                    doctors (According to the United States National Institute of Health)
-                  </h7>
-                  <br></br>
+                                    <h7>
+                                        My model was able to reach a peak of 93.1% prediction accuracy, which is significanly higher than the 72.3% diagnosis accuracy of doctors (According to the United States National Institute of Health)
+                                    </h7>
+                                    <br></br>
 
-                  <h7>
-                    Further details of the project can be found on my github page
-                    <a href="https://github.com/spartace98/Pneumonia-Detection" target="_blank" style="color:orange"><i
+                                    <h7>
+                                        Further details of the project can be found on my github page
+                                        <a href="https://github.com/spartace98/Pneumonia-Detection" target="_blank" style="color:orange"><i
                         class="material-icons">find_in_page</i></a>
-                  </h7>
-                </div>
-              </li>
-            </ul>
-          </div>
-
-          <!-- Simulations -->
-        </li>
-        <li>
-          <div id="simulations" class="collapsible-header"><i class="material-icons">computer</i>
-            <h6>Simulations</h6>
-          </div>
-          <div class="collapsible-body">
-            <ul class="collapsible popout">
-              
-              <!-- A*Star Internship -->
-              <li>
-                <div class="collapsible-header"><i class="material-icons">bubble_chart</i>Antiferromganetic Skyrmions 
-                for racetrack memory devices application
-                </div>
-                <div class="collapsible-body">
-
-                  <h7>
-                    Skyrmions are magnetic nanostructures that are stabilised by 
-                    Exchange Energy and DMI Interaction.
-                  </h7>
-                  <br></br>
-    
-                  <h7>
-                    Current driven dynamics of skyrmions has been intensely 
-                    studied due to their application in racetrack memory devices.
-                  </h7>
-                  <br></br>
-    
-                  <h7>
-                    The Skyrmions team at Institute of Material Research and 
-                    Engineering (IMRE) headed by Professor Anjan Soumyanarayanan 
-                    <a href="https://www.physics.nus.edu.sg/staff/anjan.html" style="color:#19CEE3"><i
-                      class="material-icons">person</i></a>
-                    studies the possibility of using anti-ferromagnetic materials  
-                    to designi skyrmion based racetrack devices.
-                  </h7>
-                  <br></br>
-    
-                  <h7>
-                    With a theorectical design for the antiferromagnetic layers,  
-                    I was involved in the effort of determining if the proposed structure  
-                    can host stable magnetic skyrmions, through both simulations 
-                    and experiments. 
-                  </h7>
-                  <br></br>
-    
-                  <div class="container">
-                    <div class = "row">
-                      <center>
-                        <div class = "col s12 m6">
-                          <img class="materialboxed" width="250" src="images/simulations-1.png">
-                          <b>Simulated Images</b>
-                        </div>
-                      </center>
-    
-                      <center>
-                        <div class = "col s12 m6">
-                          <img class="materialboxed" width="250" src="images/experiment-1.png">
-                          <b>Microscopy Image</b>
-                        </div>
-                      </center>
-    
+                                    </h7>
+                                </div>
+                            </li>
+                        </ul>
                     </div>
-                  </div>
-    
-                  <h7>
-                    By analysing the periodicity of the stripes form with proper image 
-                    analysis techniques, I was able to match them with actual experimental 
-                    obervations of the stripes at a fixed magnetic field. This would thus 
-                    allow me to verify that the parameters to generate this simulation 
-                    is close to the actual one. 
-                  </h7>
-              </li>
-            </ul>
-          </div>
-        </li>
-      </ul>
-    </div>
-  </section>
 
-  <!-- Awards -->
-  <section id="awards" class="section scrollspy">
-    <div class="container">
-      <h3 class="center">
-        Awards
-      </h3>
-      <ul class="collection">
-        <li class="collection-item">
-          <center>
-            <i>15-122: Principles of Imperative Computation
+                    <!-- Simulations -->
+                </li>
+                <li>
+                    <div id="simulations" class="collapsible-header"><i class="material-icons">computer</i>
+                        <h6>Simulations</h6>
+                    </div>
+                    <div class="collapsible-body">
+                        <ul class="collapsible popout">
+
+                            <!-- A*Star Internship -->
+                            <li>
+                                <div class="collapsible-header"><i class="material-icons">bubble_chart</i>Antiferromganetic Skyrmions for racetrack memory devices application
+                                </div>
+                                <div class="collapsible-body">
+
+                                    <h7>
+                                        Skyrmions are magnetic nanostructures that are stabilised by Exchange Energy and DMI Interaction.
+                                    </h7>
+                                    <br></br>
+
+                                    <h7>
+                                        Current driven dynamics of skyrmions has been intensely studied due to their application in racetrack memory devices.
+                                    </h7>
+                                    <br></br>
+
+                                    <h7>
+                                        The Skyrmions team at Institute of Material Research and Engineering (IMRE) headed by Professor Anjan Soumyanarayanan
+                                        <a href="https://www.physics.nus.edu.sg/staff/anjan.html" style="color:#19CEE3"><i
+                      class="material-icons">person</i></a> studies the possibility of using anti-ferromagnetic materials to designi skyrmion based racetrack devices.
+                                    </h7>
+                                    <br></br>
+
+                                    <h7>
+                                        With a theorectical design for the antiferromagnetic layers, I was involved in the effort of determining if the proposed structure can host stable magnetic skyrmions, through both simulations and experiments.
+                                    </h7>
+                                    <br></br>
+
+                                    <div class="container">
+                                        <div class="row">
+                                            <center>
+                                                <div class="col s12 m6">
+                                                    <img class="materialboxed" width="250" src="images/simulations-1.png">
+                                                    <b>Simulated Images</b>
+                                                </div>
+                                            </center>
+
+                                            <center>
+                                                <div class="col s12 m6">
+                                                    <img class="materialboxed" width="250" src="images/experiment-1.png">
+                                                    <b>Microscopy Image</b>
+                                                </div>
+                                            </center>
+
+                                        </div>
+                                    </div>
+
+                                    <h7>
+                                        By analysing the periodicity of the stripes form with proper image analysis techniques, I was able to match them with actual experimental obervations of the stripes at a fixed magnetic field. This would thus allow me to verify that the parameters to generate
+                                        this simulation is close to the actual one.
+                                    </h7>
+                            </li>
+                        </ul>
+                        </div>
+                </li>
+            </ul>
+            </div>
+    </section>
+
+    <!-- Awards -->
+    <section id="awards" class="section scrollspy">
+        <div class="container">
+            <h3 class="center">
+                Awards
+            </h3>
+            <ul class="collection">
+                <li class="collection-item">
+                    <center>
+                        <i>15-122: Principles of Imperative Computation
               <br>
               <b>Top 4 Best Image Manipulation Class Competition (2020)</b>
             </i>
-          </center>
-        </li>
-        <li class="collection-item">
-          <center>
-            <i>15-112: Fundamentals of Programming
+                    </center>
+                </li>
+                <li class="collection-item">
+                    <center>
+                        <i>15-112: Fundamentals of Programming
               <br>
               <b>Hack 112 Top 30 Best Projects (2019)</b>
             </i>
-          </center>
-        </li>
-        <li class="collection-item">
-          <center>
-            <i>15-112: Fundamentals of Programming
+                    </center>
+                </li>
+                <li class="collection-item">
+                    <center>
+                        <i>15-112: Fundamentals of Programming
               <br>
               <b>Nominated Final Term Project (2019)</b>
             </i>
-          </center>
-        </li>
-        <li class="collection-item">
-          <center>
-            <i>Carnegie Mellon University
+                    </center>
+                </li>
+                <li class="collection-item">
+                    <center>
+                        <i>Carnegie Mellon University
               <br>
               <b>Dean's List for Academic Performance (Fall 2019, Spring 2020)</b>
             </i>
-          </center>
-        </li>
-        <li class="collection-item">
-          <center>
-            <i>Singapore Armed Forces
+                    </center>
+                </li>
+                <li class="collection-item">
+                    <center>
+                        <i>Singapore Armed Forces
               <br>
               <b>Outstanding Soldier in Performance and Conduct (2018)</b>
             </i>
-          </center>
-        </li>
-        <li class="collection-item">
-          <center>
-            <i>Agency for Science, Technology and Research (A*STAR)
+                    </center>
+                </li>
+                <li class="collection-item">
+                    <center>
+                        <i>Agency for Science, Technology and Research (A*STAR)
               <br>
               <b>National Science Scholarship (NSS) Award (2018)</b>
             </i>
-          </center>
-        </li>
-        <li class="collection-item">
-          <center>
-            <i>Hwa Chong Institution
+                    </center>
+                </li>
+                <li class="collection-item">
+                    <center>
+                        <i>Hwa Chong Institution
               <br>
               <b>Outstanding Student Award (2017)</b>
             </i>
-          </center>
-        </li>
-        <li class="collection-item">
-          <center>
-            <i>Hwa Chong Institution
+                    </center>
+                </li>
+                <li class="collection-item">
+                    <center>
+                        <i>Hwa Chong Institution
               <br>
               <b>Diploma with Distinction- top 1% in country (2016)</b>
             </i>
-          </center>
-        </li>
-        <li class="collection-item">
-          <center>
-            <i>Ministry of Education
+                    </center>
+                </li>
+                <li class="collection-item">
+                    <center>
+                        <i>Ministry of Education
               <br>
               <b>Selected to study Higher Level University Physics (2016)</b>
             </i>
-          </center>
-        </li>
-      </ul>
-    </div>
-  </section>
-
-  <!-- Mentors -->
-  <section id="credits" class="section scrollspy">
-    <div class="container">
-      <h3 class="center">
-        Credits
-      </h3>
-      <center>
-        <h6>
-          I would specially like to thank my mentors who have advised and 
-          encouraged me on my research.
-        </h6>
-      </center>
-
-      <center>
-        <p>
-          Comparing Classical Machine Learning Techniques in regresssion analysis of MRI data
-          <br><i>B.T Thomas Yeo (NUS ECE Department 2019)</i></br>
-        </p>
-
-        <p>
-          Image Processing of Micromagnetics Simulations and Experiments
-          <br><i>Anjan Soumyanarayanan (A*Star IMRE 2019-)</i></br>
-        </p>
-
-        <p>
-          Sensor Calibration and Computer Vision for Soft Robotics Applications
-          <br><i>Nancy Pollard (CMU Robotics Institute, Graphics Lab 2019-)</i></br>
-        </p>
-      </center>
-    </div>
-  </section>
-
-  <!-- Footer  -->
-  <footer class="page-footer teal lighten-2">
-    <div class="container">
-      <div id="contact" class="scrollspy"></div>
-      <div class="row">
-        <div class="col l6 s12">
-          <h5 class="white-text">Contact</h5>
-          <p class="grey-text text-lighten-4">
-            If you are interested to learn more about my work and would like to
-            schedule an interview with me, do contact me through the links on
-            the right!
-          </p>
+                    </center>
+                </li>
+            </ul>
         </div>
-        <div class="col l4 offset-l2 s12">
-          <h5 class="white-text">Methods</h5>
-          <ul>
+    </section>
+
+    <!-- Mentors -->
+    <section id="credits" class="section scrollspy">
+        <div class="container">
+            <h3 class="center">
+                Credits
+            </h3>
+            <center>
+                <h6>
+                    I would specially like to thank my mentors who have advised and encouraged me on my research.
+                </h6>
+            </center>
+
+            <center>
+                <p>
+                    Comparing Classical Machine Learning Techniques in regresssion analysis of MRI data
+                    <br><i>B.T Thomas Yeo (NUS ECE Department 2019)</i></br>
+                </p>
+
+                <p>
+                    Image Processing of Micromagnetics Simulations and Experiments
+                    <br><i>Anjan Soumyanarayanan (A*Star IMRE 2019-)</i></br>
+                </p>
+
+                <p>
+                    Sensor Calibration and Computer Vision for Soft Robotics Applications
+                    <br><i>Nancy Pollard (CMU Robotics Institute, Graphics Lab 2019-)</i></br>
+                </p>
+            </center>
+        </div>
+    </section>
+
+    <!-- Footer  -->
+    <footer class="page-footer orange lighten-3">
+        <div class="container">
+            <div id="contact" class="scrollspy"></div>
             <div class="row">
-              <!-- Email -->
-              <div class="col s3">
-                <li>
-                  <a class="grey-text text-lighten-3" href="mailto:chaoli2@andrew.cmu.edu">
-                    <i class="small material-icons">email</i>
-                  </a>
-                </li>
-              </div>
-              <!-- Contact Number -->
-              <div class="col s3">
-                <li>
-                  <a class="grey-text text-lighten-3 modal-trigger" href="#phone">
-                    <i class="small material-icons">phone</i>
-                  </a>
-                </li>
-              </div>
-              <!-- Robotics Institute Contact -->
-              <div class="col s3">
-                <li>
-                  <a class="grey-text text-lighten-3" href="https://www.ri.cmu.edu/ri-people/chao-li/">
-                    <i class="small material-icons">work</i>
-                  </a>
-                </li>
-              </div>
-              <!-- Github -->
-              <div class="col s3">
-                <li>
-                  <a class="grey-text text-lighten-3" href="https://github.com/spartace98/">
-                    <img src="images/github.png">
-                  </a>
-                </li>
-              </div>
+                <div class="col l6 s12">
+                    <h5 class="footer">Contact</h5>
+                    <p class="footer">
+                        If you are interested to learn more about my work and would like to schedule an interview with me, do contact me through the links on the right!
+                    </p>
+                </div>
+                <div class="col l4 offset-l2 s12">
+                    <h5 class="footer">Methods</h5>
+                    <ul>
+                        <div class="row">
+                            <!-- Email -->
+                            <div class="col s3">
+                                <li>
+                                    <a class="footer" href="mailto:chaoli2@andrew.cmu.edu">
+                                        <i class="small material-icons">email</i>
+                                    </a>
+                                </li>
+                            </div>
+                            <!-- Contact Number -->
+                            <div class="col s3">
+                                <li>
+                                    <a class="footer modal-trigger" href="#phone">
+                                        <i class="small material-icons">phone</i>
+                                    </a>
+                                </li>
+                            </div>
+                            <!-- Robotics Institute Contact -->
+                            <div class="col s3">
+                                <li>
+                                    <a class="footer" href="https://www.ri.cmu.edu/ri-people/chao-li/">
+                                        <i class="small material-icons">work</i>
+                                    </a>
+                                </li>
+                            </div>
+                            <!-- Github -->
+                            <div class="col s3">
+                                <li>
+                                    <a class="footer" href="https://github.com/spartace98/">
+                                        <img src="images/github.png">
+                                    </a>
+                                </li>
+                            </div>
+                        </div>
+                    </ul>
+                </div>
             </div>
-          </ul>
         </div>
-      </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="container footer">
+                © Github Pages
+                <a class="grey-text text-lighten-4 right" href="#!"></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Contact Modal Structure -->
+    <div id="phone" class="modal">
+        <div class="modal-content">
+            <h4>Phone Number</h4>
+            <p>US Contact: +1 412-708-8343</p>
+            <p>I am uncontactable via this number since I am currently not in the US</p>
+        </div>
     </div>
-    </div>
-    <div class="footer-copyright">
-      <div class="container">
-        © Github Pages
-        <a class="grey-text text-lighten-4 right" href="#!"></a>
-      </div>
-    </div>
-  </footer>
 
-  <!-- Contact Modal Structure -->
-  <div id="phone" class="modal">
-    <div class="modal-content">
-      <h4>Phone Number</h4>
-      <p>US Contact: +1 412-708-8343</p>
-      <p>I am uncontactable via this number since I am currently not in the US</p>
-    </div>
-  </div>
+    <!--JavaScript at end of body for optimized loading-->
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script src="js/internal-script.js"></script>
 
-  <!--JavaScript at end of body for optimized loading-->
-  <script type="text/javascript" src="js/materialize.min.js"></script>
-
-  <script>
-    // Sidenav
-    const sideNav = document.querySelectorAll(".sidenav");
-    M.Sidenav.init(sideNav, {
-      onOpenStart: true,
-    });
-
-    // Slider
-    const slider = document.querySelectorAll(".slider");
-    M.Slider.init(slider, {
-      indicators: true,
-      height: 800,
-      transition: 500,
-      interval: 6000,
-    });
-
-    // Scrollspy
-    const scrollspy = document.querySelectorAll(".scrollspy");
-    M.ScrollSpy.init(scrollspy, {});
-
-    // collapsible
-    const collapsible = document.querySelectorAll(".collapsible");
-    M.Collapsible.init(collapsible, {});
-    $("[data-click]").on("click", function (e) {
-      $($(this).attr("href")).trigger("click");
-    });
-
-    // Modal
-    const modal = document.querySelector(".modal");
-    M.Modal.init(modal, {});
-
-    // Material Boxed
-    const materialboxed = document.querySelectorAll(".materialboxed");
-    M.Materialbox.init(materialboxed, {});
-
-    // Carousel
-    const carousel = document.querySelectorAll(".carousel");
-    M.Carousel.init(carousel, {
-      fullWidth: true,
-      indicators: true,
-    });
-
-    // Tap-target
-    const tap_target = document.querySelectorAll(".tap-target");
-    M.TapTarget.init(tap_target, {});
-  </script>
 </body>
 
 </html>
