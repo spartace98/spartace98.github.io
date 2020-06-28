@@ -1,0 +1,32 @@
+body{
+    font-family: 'IBM Plex Serif', serif;
+    background-color: #D2FDFF;
+    color: #303C6C;
+}
+
+nav{
+    height:90px;
+    line-height: 90px;
+}
+.p{
+    color: white;
+}
+
+.header{
+    color: #303C6C;
+    font-size: 20px;
+}
+
+.header-logo{
+    color: #303C6C;
+    font-size: 80px;
+}
+
+.footer{
+    color: #303C6C;
+}
+
+.card-text{
+    color: #e91e63;
+    font-weight: bold;
+}
