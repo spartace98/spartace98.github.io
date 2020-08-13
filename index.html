@@ -136,17 +136,39 @@
             <div class="container">
                 <center>
                     <p class="flow-text">
-                        I am Charlie (Li Chao), an Electrical and Computer Engineering student from Carnegie Mellon University.
+                        I am Charlie (Li Chao), an Electrical and Computer Engineering student from Carnegie Mellon University
+                    </p>
+                    <p class="flow-text">
+                        I enjoy playing with my Ukulele, Jog and practice Yoga. I used to play the French Horn
+                        at a national level, and do dream of performing in front of large crowds again
                     </p>
                     <p class="flow-text">
                         My research interest lies in robotics- integrating motion sensors with visual readings across space and time domains
                         <!-- My passion is to use high performing computations to better visualise and understand the world around us. -->
                     </p>
                     <p class="flow-text">
-                        I specialise in Computer Vision, Machine Learning and Signal Processing.
+                        I specialise in Computer Vision, Machine Learning and Signal Processing
                     </p>
                 </center>
             </div>
+
+            <!-- Modal Trigger -->
+            <!-- <a class="right waves-effect waves-light btn modal-trigger red accent-1" href="#more-about-me">More about Me!</a> -->
+
+            <!-- Modal Structure -->
+            <!-- <div id="more-about-me" class="modal">
+                <div class="modal-content">
+                <h4>More about me</h4>
+                <p>
+                    I was formerly part of the Hwa Chong Symphonic and Military Band in my high school.
+
+                    <img src = "js/"></p>
+
+
+                </p>
+                </div>
+            </div>
+            <br> -->
         </div>
     </section>
 
@@ -191,7 +213,7 @@
             <h3 class="center">
                 Projects
             </h3>
-            <ul class="collapsible" style = "background-color: #f8f3ca;">
+            <ul class="collapsible" style = "background-color: #f8f1e3;">
 
                 <!-- Computer Vision -->
                 <li>
@@ -374,17 +396,52 @@
 
                             <!-- Semisupervised Learning-->
                             <li>
-                                <div class="collapsible-header"><i class="material-icons">local_hospital</i>Enhancing Semisupervised Learning for more accurate and realistic predictions.</div>
+                                <div class="collapsible-header"><i class="material-icons">local_hospital</i>
+                                    Semisupervised learning on unilabel, multiclass, class imbalance environment
+                                </div>
                                 <div class="collapsible-body">
                                     <h7>
-                                        Some of the most powerful supervised machine learning models rely on labeled dataset for training. However, labeling data is economically
-                                        expensive. Therefore, most of data in the world are unlabeled althogh they can provide useful data for learning.
-                                    </h7>
+                                        Semi-supervised learning is an approach to machine learning that combines a small amount of labeled data with a large amount of unlabeled data during training, 
+                                        thus increasing the size of the training set. A large rtraining set improves the performance of deep neural networks. 
 
-                                    <h7>
-                                        Semisupervised learning solves this issue by learning not just on labeled data, but on unlabeled data as well. This increases the size of training set. 
-                                        In 2016, the state of the art semisupervised learning was Mean Teacher, which has demonstrated incredible performance on a subset of labeled dataset as 
-                                        comapared to supervised models. However, Mean Teacher does not work well on class imbalanced datasets as compared to supervised learning models.
+                                        <br></br>
+
+                                        Former state of the art semi-supervised model, Mean Teacher, trains with a student and a teacher network, where the loss is backpropagated to the stduent network and the teacher weights are updated 
+                                        by the student's weight with an exponential moving average. However, this leads to confirmation bias, which means that the wrong learning by the student model gets propagated to the teacher model.
+                                    
+                                        <br></br>
+
+                                        Semi-supervised learning is also known to have poor performance in a class imbalanced environment (Hyun, M., Jeong, J., & Kwak, N. (2020). Class-Imbalanced Semi-Supervised Learning.)
+
+                                        <br></br>
+
+                                        In medical datasets, data tend not to distributed among patients since most patients are healthy. A simple breakdown of the NIH Chest X-Ray 
+                                        dataset clearly illustrates this
+                                        <table class>
+                                            <thead>
+                                                <tr>
+                                                    <th>Cardiomegaly</th>
+                                                    <th>Hernia</th>
+                                                    <th>Atelectasis</th>
+                                                    <th>No Finding</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>2772</td>
+                                                    <td>227</td>
+                                                    <td>11535</td>
+                                                    <td>60412</td>
+                                                </tr>
+                                              </tbody>
+                                        </table>
+
+                                        <br></br>
+
+                                        Therefore, the aim of my research was to develop a semi-supervised learning technique that has the capacity to perform better than
+                                        a supervised learning model with just a subset of the data, in such a class imbalance environment.
+
+                                        For further details, please contact me due to intellectual property rights.
                                     </h7>
 
                                 </div>
@@ -396,10 +453,10 @@
                     </div>
                 </li>
 
-                <!-- Signal Procesing -->
+                <!-- Signal Processing -->
                 <li>
                     <div id="signal-processing" class="collapsible-header"><i class="material-icons">computer</i>
-                        <h6>Signal Procesing</h6>
+                        <h6>Signal Processing</h6>
                     </div>
                     <div class="collapsible-body">
                         <ul class="collapsible popout">
@@ -410,7 +467,7 @@
                                     Applying filters on Gaussian Noise IMU and Tactile Sensors
                                 </div>
                                 <div class="collapsible-body">
-                                    test
+                                    More will be updated soon! Stay tuned!
                                 </div>
                             </li>
                         </ul>
@@ -420,7 +477,7 @@
                 <!-- Others -->
                 <li>
                     <div id="others" class="collapsible-header"><i class="material-icons">computer</i>
-                        <h6>Others</h6>
+                        <h6>Others (Internships + Side Projects)</h6>
                     </div>
                     <div class="collapsible-body">
                         <ul class="collapsible popout">
@@ -477,8 +534,35 @@
                                         By analysing the periodicity of the stripes form with proper image analysis techniques, I was able to match them with actual experimental obervations of the stripes at a fixed magnetic field. This would thus allow me to verify that the parameters to generate
                                         this simulation is close to the actual one.
                                     </h7>
+
+                                    <br></br>
+
+                                    <h7>
+                                    For further details, please contact me due to intellectual property rights.
+                                    </h7>
                                 </div>
                             </li>
+
+                            <!-- NUS Covid-Response Project -->
+                            <li>
+                                <div class="collapsible-header"><i class="material-icons">tap_and_play</i>
+                                    NUS Covid-19 Response Project
+                                </div>
+                                <div class="collapsible-body">
+                                    <h7>
+                                        Over the summer, I was invited by Professor John Ho from NUS Electrical and Computer Engineering Department
+                                        to help with a government project that was aimed at assisting medical volunteers working frontline for infected
+                                        patients in the local foreign worker dormitories.
+
+                                    </h7>
+                                    
+                                    <br></br>
+                                    A picture is worth a thousand words. A website is worth a thousand. 
+                                    
+
+                                </div>
+                            </li>
+
                         </ul>
                     </div>
                 </li>
