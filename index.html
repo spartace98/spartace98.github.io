@@ -2,6 +2,7 @@
 <html>
 
 <head>
+    <title>Ideation by Charlie Li</title>
     <!--Import Google Icon Font-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
@@ -153,22 +154,44 @@
             </div>
 
             <!-- Modal Trigger -->
-            <!-- <a class="right waves-effect waves-light btn modal-trigger red accent-1" href="#more-about-me">More about Me!</a> -->
+            <a class="right waves-effect waves-light btn modal-trigger red accent-1" href="#more-about-me">More about Me!</a>
 
             <!-- Modal Structure -->
-            <!-- <div id="more-about-me" class="modal">
+            <div id="more-about-me" class="modal">
                 <div class="modal-content">
                 <h4>More about me</h4>
                 <p>
-                    I was formerly part of the Hwa Chong Symphonic and Military Band in my high school.
-
-                    <img src = "js/"></p>
-
-
+                    I was first introduced to Science and Technology by my parents, both of whom were chemists. When I was young, my father would 
+                    often bring me to his laboratory to watch him work. One of my fondest memory was working with my father to synthesize shampoo 
+                    and body lotion.
                 </p>
+                
+
+                <!-- Band -->
+                <p>
+                    I was formerly part of the Hwa Chong Symphonic and Military Band in high school, where I played the French Horn.
+                </p>
+                <!-- Band Images -->
+                <div class = "row">
+                    <div class="col s6">
+                        <img class="responsive-img" src = "images/band.jpg"></img>
+                    </div>
+                    <div class="col s6">
+                        <img class="responsive-img" src = "images/band2.jpg"></img>
+                    </div>
+                </div>
+                <p>
+                    Our band was one of the top high school bands in Singapore, and we have won multiple awards both at a national level and
+                    international level.
+                </p>
+
+                <!-- Ukulele -->
+                
+                    
+                <br>
                 </div>
             </div>
-            <br> -->
+            <br>
         </div>
     </section>
 
@@ -222,15 +245,15 @@
                             <h6>
                     </div>
                     <div class="collapsible-body">
-                        <!-- CMU Research and 112 Term Project -->
                         <ul class="collapsible popout">
+                            <!-- CMU Research and 112 Term Project -->
                             <li>
                                 <div class="collapsible-header"><i class="material-icons">fingerprint</i>April Tag Detection for Soft Robotics Hand Manipulations</div>
                                 <div class="collapsible-body">
                                     <h7>
                                         I have been working with Professor Nancy Pollard
                                         <a href="http://graphics.cs.cmu.edu/nsp/index.html" style="color:#19CEE3"><i
-                        class="material-icons">person</i></a> from the Robotics Institute to design a soft robotics hand for dexterous manipulations.
+                                            class="material-icons">person</i></a> from the Robotics Institute to design a soft robotics hand for dexterous manipulations.
                                     </h7>
                                     <br></br>
 
@@ -265,7 +288,7 @@
 
                             <!-- Hack 112 -->
                             <li>
-                                <div class="collapsible-header"><i class="material-icons">camera</i>Object Detection for General Applications
+                                <div class="collapsible-header"><i class="material-icons">camera</i>Blob Detection for General Applications
                                 </div>
                                 <div class="collapsible-body">
                                     <h7>
@@ -305,6 +328,15 @@
                                     </h7>
                                 </div>
                             </li>
+
+                            <li>
+                                <div class="collapsible-header"><i class="material-icons">camera_alt</i>Fast, easy and reliable reconfiguration for real-time pose estimation
+                                </div>
+                                <div class="collapsible-body">
+                                    To be updated soon. Stay tuned!    
+                                </div>
+                            </li>
+
                         </ul>
                     </div>
                 </li>
@@ -316,6 +348,72 @@
                     </div>
                     <div class="collapsible-body">
                         <ul class="collapsible popout">
+
+                            <!-- Semisupervised Learning-->
+                            <li>
+                                <div class="collapsible-header"><i class="material-icons">local_hospital</i>
+                                    Semisupervised learning on unilabel, multiclass, class imbalance environment
+                                </div>
+                                <div class="collapsible-body">
+                                    <h7>
+                                        Semi-supervised learning is an approach to machine learning that combines a small amount of labeled data with a large amount of unlabeled data during training, 
+                                        thus increasing the size of the training set. A large rtraining set improves the performance of deep neural networks. 
+
+                                        <br></br>
+
+                                        Former state of the art semi-supervised model, Mean Teacher, trains with a student and a teacher network, where the loss is backpropagated to the stduent network and the teacher weights are updated 
+                                        by the student's weight with an exponential moving average. However, this leads to confirmation bias, which means that the wrong learning by the student model gets propagated to the teacher model.
+                                    
+                                        <br></br>
+
+                                        Semi-supervised learning is also known to have poor performance in a class imbalanced environment (Hyun, M., Jeong, J., & Kwak, N. (2020). Class-Imbalanced Semi-Supervised Learning.)
+
+                                        <br></br>
+
+                                        In medical datasets, data tend not to distributed among patients since most patients are healthy. A simple breakdown of the NIH Chest X-Ray 
+                                        dataset clearly illustrates this
+                                        
+                                        <br>
+
+                                        <center>
+                                            <img src = "images/classImbalance.png"></img>
+                                        </center>
+
+                                        <center>
+                                            Chest X-ray images from NIH-14 dataset
+                                        </center>
+                                        
+                                        <br>
+
+                                        <table class>
+                                            <thead>
+                                                <tr>
+                                                    <th>Cardiomegaly</th>
+                                                    <th>Hernia</th>
+                                                    <th>Atelectasis</th>
+                                                    <th>No Finding</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>2772</td>
+                                                    <td>227</td>
+                                                    <td>11535</td>
+                                                    <td>60412</td>
+                                                </tr>
+                                              </tbody>
+                                        </table>
+
+                                        <br></br>
+
+                                        Therefore, the aim of my research was to develop a semi-supervised learning technique that has the capacity to perform better than
+                                        a supervised learning model with just a subset of the data, in such a class imbalance environment.
+
+                                        For further details, please contact me due to intellectual property rights.
+                                    </h7>
+
+                                </div>
+                            </li>
 
                             <!-- NUS Internship -->
                             <li>
@@ -389,66 +487,10 @@
                                     <h7>
                                         Further details of the project can be found on my github page
                                         <a href="https://github.com/spartace98/Pneumonia-Detection" target="_blank" style="color:orange"><i
-                        class="material-icons">find_in_page</i></a>
+                                            class="material-icons">find_in_page</i></a>
                                     </h7>
                                 </div>
                             </li>
-
-                            <!-- Semisupervised Learning-->
-                            <li>
-                                <div class="collapsible-header"><i class="material-icons">local_hospital</i>
-                                    Semisupervised learning on unilabel, multiclass, class imbalance environment
-                                </div>
-                                <div class="collapsible-body">
-                                    <h7>
-                                        Semi-supervised learning is an approach to machine learning that combines a small amount of labeled data with a large amount of unlabeled data during training, 
-                                        thus increasing the size of the training set. A large rtraining set improves the performance of deep neural networks. 
-
-                                        <br></br>
-
-                                        Former state of the art semi-supervised model, Mean Teacher, trains with a student and a teacher network, where the loss is backpropagated to the stduent network and the teacher weights are updated 
-                                        by the student's weight with an exponential moving average. However, this leads to confirmation bias, which means that the wrong learning by the student model gets propagated to the teacher model.
-                                    
-                                        <br></br>
-
-                                        Semi-supervised learning is also known to have poor performance in a class imbalanced environment (Hyun, M., Jeong, J., & Kwak, N. (2020). Class-Imbalanced Semi-Supervised Learning.)
-
-                                        <br></br>
-
-                                        In medical datasets, data tend not to distributed among patients since most patients are healthy. A simple breakdown of the NIH Chest X-Ray 
-                                        dataset clearly illustrates this
-                                        <table class>
-                                            <thead>
-                                                <tr>
-                                                    <th>Cardiomegaly</th>
-                                                    <th>Hernia</th>
-                                                    <th>Atelectasis</th>
-                                                    <th>No Finding</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr>
-                                                    <td>2772</td>
-                                                    <td>227</td>
-                                                    <td>11535</td>
-                                                    <td>60412</td>
-                                                </tr>
-                                              </tbody>
-                                        </table>
-
-                                        <br></br>
-
-                                        Therefore, the aim of my research was to develop a semi-supervised learning technique that has the capacity to perform better than
-                                        a supervised learning model with just a subset of the data, in such a class imbalance environment.
-
-                                        For further details, please contact me due to intellectual property rights.
-                                    </h7>
-
-                                </div>
-                            </li>
-
-
-
                         </ul>
                     </div>
                 </li>
