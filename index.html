@@ -86,18 +86,28 @@
                     <h5 class="light grey-text text-lighten-3 hide-on-small-only">From Carnegie Mellon University</h5>
                 </div>
             </li>
+
             <li>
-                <!-- Camera Calibration -->
-                <img src="images/calibration.jpg">
-                <div class="caption right-align">
+                <!-- IMU Images -->
+                <img src="images/hand_manip.png">
+                <div class="caption left-align">
+                    <h3 class>Sensor Fusion</h3>
+                    <h5 class="light grey-text text-lighten-3 hide-on-small-only">with signal processing methods</h5>
+                </div>
+            </li>
+
+            <li>
+                <!-- Spots Tracking -->
+                <img src="images/spot_tracking.png">
+                <div class="caption left-align" style = "color:black">
                     <h3>Computer Vision</h3>
-                    <h5 class="light grey-text text-lighten-3 hide-on-small-only">Uncovering new methods <br> to visualise the world
+                    <h5 class="hide-on-small-only">Uncovering new methods <br> to visualise the world
                     </h5>
                 </div>
             </li>
 
             <li>
-                <img src="images/brain.jpg">
+                <img src="images/chest-xray.png">
                 <!-- NUS Internship -->
                 <div class="caption center-align">
                     <h3>Machine Learning</h3>
@@ -114,6 +124,15 @@
                     <h5 class="light grey-text text-lighten-3 hide-on-small-only">Explaining physical phenomemons <br> with high performance computations</h5>
                 </div>
             </li>
+
+            <li>
+                <!-- Side Projects -->
+                <img src="images/covid-project.png">
+                <div class="caption right-align" style = "color:black">
+                    <h3>Solving Real World problems</h3>
+                    <h5 class="hide-on-small-only">Responding to global crises <br> with UI/UX driven solutions</h5>
+                </div>
+            </li>
         </ul>
     </section>
 
@@ -126,10 +145,11 @@
             <div class="container">
                 <center>
                     <p class="flow-text">
-                        I am a student from Carnegie Mellon University, studying Electrical and Computer Engineering.
+                        I am Charlie (Li Chao), an Electrical and Computer Engineering student from Carnegie Mellon University.
                     </p>
                     <p class="flow-text">
-                        My passion is to use high performing computations to better visualise and understand the world around us.
+                        My research interest lies in robotics- integrating motion sensors with visual readings across space and time domains
+                        <!-- My passion is to use high performing computations to better visualise and understand the world around us. -->
                     </p>
                     <p class="flow-text">
                         I specialise in Computer Vision, Machine Learning and Simulations.
@@ -180,7 +200,7 @@
             <h3 class="center">
                 Projects
             </h3>
-            <ul class="collapsible" style = "background-color: #f0f4c3;">
+            <ul class="collapsible" style = "background-color: #fff9c4;">
 
                 <!-- Computer Vision -->
                 <li>
@@ -360,6 +380,27 @@
                                     </h7>
                                 </div>
                             </li>
+
+                            <!-- Semisupervised Learning-->
+                            <li>
+                                <div class="collapsible-header"><i class="material-icons">local_hospital</i>Enhancing Semisupervised Learning for more accurate and realistic predictions.</div>
+                                <div class="collapsible-body">
+                                    <h7>
+                                        Some of the most powerful supervised machine learning models rely on labeled dataset for training. However, labeling data is economically
+                                        expensive. Therefore, most of data in the world are unlabeled althogh they can provide useful data for learning.
+                                    </h7>
+
+                                    <h7>
+                                        Semisupervised learning solves this issue by learning not just on labeled data, but on unlabeled data as well. This increases the size of training set. 
+                                        In 2016, the state of the art semisupervised learning was Mean Teacher, which has demonstrated incredible performance on a subset of labeled dataset as 
+                                        comapared to supervised models. However, Mean Teacher does not work well on class imbalanced datasets as compared to supervised learning models.
+                                    </h7>
+
+                                </div>
+                            </li>
+
+
+
                         </ul>
                     </div>
 
@@ -526,22 +567,26 @@
                 </h6>
             </center>
 
-            <center>
-                <p>
-                    Comparing Classical Machine Learning Techniques in regresssion analysis of MRI data
-                    <br><i>B.T Thomas Yeo (NUS ECE Department 2019)</i></br>
-                </p>
-
-                <p>
-                    Image Processing of Micromagnetics Simulations and Experiments
-                    <br><i>Anjan Soumyanarayanan (A*Star IMRE 2019-)</i></br>
-                </p>
-
-                <p>
-                    Sensor Calibration and Computer Vision for Soft Robotics Applications
-                    <br><i>Nancy Pollard (CMU Robotics Institute, Graphics Lab 2019-)</i></br>
-                </p>
-            </center>
+            <div class = "mentors">
+                <center>
+                    <p>
+                        Sensor Calibration and Computer Vision for Soft Robotics Applications
+                        <br><i>Professor Nancy Pollard (CMU Robotics Institute, Graphics Lab, Sep 2019-)</i></br>
+                    </p>
+                    <p>
+                        Semi-supervised learning on unilabel, multiclass, class imbalance dataset
+                        <br><i>Dr Foo Chuan Sheng (A*Star I2R, DL2MI Lab, Jun - Aug 2020)</i></br>
+                    </p>
+                    <p>
+                        Image Processing of Micromagnetics Simulations and Experiments
+                        <br><i>Assistant Professor Anjan Soumyanarayanan (A*Star IMRE, Apr - Aug 2019)</i></br>
+                    </p>
+                    <p>
+                        Comparing Classical Machine Learning Techniques in regresssion analysis of MRI data
+                        <br><i>Assistant Professor B.T Thomas Yeo (NUS ECE Department, Jan - Apr 2019)</i></br>
+                    </p>
+                </center>
+            </div>
         </div>
     </section>
 
