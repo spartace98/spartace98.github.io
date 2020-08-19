@@ -4309,7 +4309,7 @@ nav .nav-wrapper {
   height: 100%;
 }
 
-@media only screen and (min-width: 993px) {
+@media only screen and (min-width: 1220px) {
   nav a.sidenav-trigger {
     display: none;
   }
@@ -4321,6 +4321,7 @@ nav .sidenav-trigger {
   z-index: 1;
   height: 56px;
   margin: 0 18px;
+  color: black;
 }
 
 nav .sidenav-trigger i {
@@ -4477,7 +4478,7 @@ nav .input-field label.active i {
   }
   nav, nav .nav-wrapper i, nav a.sidenav-trigger, nav a.sidenav-trigger i {
     height: 64px;
-    line-height: 64px;
+    line-height: 90px;
   }
   .navbar-fixed {
     height: 64px;

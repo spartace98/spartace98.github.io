@@ -7,15 +7,17 @@ onOpenStart: true,
 // Slider
 const slider = document.querySelectorAll(".slider");
 M.Slider.init(slider, {
-indicators: true,
-height: 800,
+indicators: false,
+height: 600,
 transition: 500,
 interval: 6000,
 });
 
 // Scrollspy
 const scrollspy = document.querySelectorAll(".scrollspy");
-M.ScrollSpy.init(scrollspy, {});
+M.ScrollSpy.init(scrollspy, {
+    scrollOffset: 100,
+});
 
 // collapsible
 const collapsible = document.querySelectorAll(".collapsible");
@@ -25,7 +27,7 @@ $($(this).attr("href")).trigger("click");
 });
 
 // Modal
-const modal = document.querySelector(".modal");
+const modal = document.querySelectorAll(".modal");
 M.Modal.init(modal, {});
 
 // Material Boxed

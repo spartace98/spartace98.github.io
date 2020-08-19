@@ -30,7 +30,7 @@
                     <a href="#" data-target="mobile-nav" class="sidenav-trigger">
                         <i class="material-icons">menu</i>
                     </a>
-                    <ul class="right hide-on-med-and-down">
+                    <ul class="right hide-on-med-and-down-type2">
                         <li class="tab col s2">
                             <a href="#about" class="header">About</a>
                         </li>
@@ -42,9 +42,6 @@
                         </li>
                         <li class="tab col s2">
                             <a href="resume-lichao.docx" download class="header">Resume</a>
-                        </li>
-                        <li class="tab col s2">
-                            <a href="#credits" class="header">Credits</a>
                         </li>
                         <li class="tab col s2">
                             <a href="#contact" class="header">Contact</a>
@@ -76,57 +73,12 @@
         </li>
     </ul>
 
-    <!-- Slider  -->
-    <section class="slider">
-        <ul class="slides">
-            <li>
-                <!-- Photo of myself -->
-                <img src="images/portrait2.jpeg">
-                <div class="caption left-align">
-                    <h3 class>An Electrical & Computer<br> Engineering Student</h3>
-                    <h5 class="light grey-text text-lighten-3 hide-on-small-only">From Carnegie Mellon University</h5>
-                </div>
-            </li>
-
-            <li>
-                <!-- Spots Tracking -->
-                <img src="images/spot_tracking.png">
-                <div class="caption left-align" style = "color:black">
-                    <h3>Computer Vision</h3>
-                    <h5 class="hide-on-small-only">Uncovering new methods <br> to visualise the world
-                    </h5>
-                </div>
-            </li>
-
-            <li>
-                <img src="images/chest-xray.png">
-                <!-- NUS Internship -->
-                <div class="caption center-align">
-                    <h3>Machine Learning</h3>
-                    <h5 class="light grey-text text-lighten-3 hide-on-small-only">Uncovering relationships of natural processes
-                    </h5>
-                </div>
-            </li>
-
-            <li>
-                <!-- IMU Images -->
-                <img src="images/hand_manip.png">
-                <div class="caption left-align" style = "color:white">
-                    <h3 class>Sensor Fusion</h3>
-                    <h5 class="hide-on-small-only">with signal processing methods</h5>
-                </div>
-            </li>
-
-            <li>
-                <!-- Side Projects -->
-                <img src="images/covid-project.png">
-                <div class="caption center-align" style = "color:black">
-                    <h3>Solving Real World problems</h3>
-                    <h5 class="hide-on-small-only">Responding to global crisis <br> with UI/UX driven solutions</h5>
-                </div>
-            </li>
-        </ul>
-    </section>
+    <!-- video of hand manipulation -->
+    <div class="video">
+        <video width = 100% autoplay="autoplay" loop="loop">
+            <source src = "images/manipulation.mp4" type="video/mp4">
+        </video>
+    </div>
 
     <!-- About Section -->
     <section id="about" class="section scrollspy">
@@ -140,8 +92,7 @@
                         I am Charlie (Li Chao), an Electrical and Computer Engineering student from Carnegie Mellon University
                     </p>
                     <p class="flow-text">
-                        I enjoy playing with my Ukulele, Jog and practice Yoga. I used to play the French Horn
-                        at a national level, and do dream of performing in front of large crowds again
+                        I enjoy playing with my Ukulele, Jog and practice Yoga. I used to play the French Horn at a national level, and do dream of performing in front of large crowds again
                     </p>
                     <p class="flow-text">
                         My research interest lies in robotics- integrating motion sensors with visual readings across space and time domains
@@ -155,79 +106,101 @@
 
             <!-- Modal Trigger -->
             <a class="right waves-effect waves-light btn modal-trigger red accent-1" href="#more-about-me">More about Me!</a>
-
-            <!-- Modal Structure -->
-            <div id="more-about-me" class="modal">
-                <div class="modal-content">
-                <h4>More about me</h4>
-                <p>
-                    I was first introduced to Science and Technology by my parents, both of whom were chemists. When I was young, my father would 
-                    often bring me to his laboratory to watch him work. One of my fondest memory was working with my father to synthesize shampoo 
-                    and body lotion.
-                </p>
-                
-
-                <!-- Band -->
-                <p>
-                    I was formerly part of the Hwa Chong Symphonic and Military Band in high school, where I played the French Horn.
-                </p>
-                <!-- Band Images -->
-                <div class = "row">
-                    <div class="col s6">
-                        <img class="responsive-img" src = "images/band.jpg"></img>
-                    </div>
-                    <div class="col s6">
-                        <img class="responsive-img" src = "images/band2.jpg"></img>
-                    </div>
-                </div>
-                <p>
-                    Our band was one of the top high school bands in Singapore, and we have won multiple awards both at a national level and
-                    international level.
-                </p>
-
-                <!-- Ukulele -->
-                
-                    
-                <br>
-                </div>
-            </div>
-            <br>
+            <br></br>
         </div>
     </section>
 
-    <!-- Icons -->
-    <section class="section section-icons center">
-        <div class="row">
-            <div class="col s12 m4">
-                <div class="card-panel">
-                    <a href="#computer-vision" data-click="true"><i class="material-icons large red-text text-accent-1">insert_photo</i></a>
-                    <a href="#computer-vision" style="color:#ff5252" data-click="true">
-                        <h4 class = "card-text">Computer Vision</h4>
-                    </a>
-                    <p>Image Filtering, Object Detection</p>
-                </div>
-            </div>
+    <!-- Research Interests -->
+    <section id="research-interests">
+        <h3 class="center">
+            Research Interests
+        </h3>
 
-            <div class="col s12 m4">
-                <div class="card-panel">
-                    <a href="#machine-learning" data-click="true"><i class="material-icons large red-text text-accent-1">subtitles</i></a>
-                    <a href="#machine-learning" style="color:#ff5252" data-click="true">
-                        <h4 class = "card-text">Machine Learning</h4>
-                    </a>
-                    <p>Classical ML & Neural Networks</p>
-                </div>
-            </div>
+        <!-- Slider  -->
+        <div class="slider">
+            <ul class="slides">
+                <!-- <li> -->
+                <!-- Photo of myself -->
+                <!-- <img src="images/portrait2.jpeg">
+                    <div class="caption left-align">
+                        <h3 class>An Electrical & Computer<br> Engineering Student</h3>
+                        <h5 class="light grey-text text-lighten-3 hide-on-small-only">From Carnegie Mellon University</h5>
+                    </div>
+                </li> -->
 
-            <div class="col s12 m4">
-                <div class="card-panel">
-                    <a href="#signal-processing" data-click="true"><i class="material-icons large red-text text-accent-1">computer</i></a>
-                    <a href="#signal-processing" style="color:#ff5252" data-click="true">
-                        <h4 class = "card-text">Signal Processing</h4>
-                    </a>
-                    <p>Magnetic Skyrmions</p>
-                </div>
-            </div>
+                <li>
+                    <!-- Spots Tracking -->
+                    <img src="images/spot_tracking.png">
+                    <div class="caption left-align" style="color:black">
+                        <h3>Computer Vision</h3>
+                        <h5 class="hide-on-small-only">Uncovering new methods <br> to visualise the world
+                        </h5>
+                    </div>
+                </li>
+
+                <li>
+                    <!-- NUS Internship -->
+                    <img src="images/chest-xray.png">
+                    <div class="caption center-align">
+                        <h3>Machine Learning</h3>
+                        <h5 class="light grey-text text-lighten-3 hide-on-small-only">Uncovering relationships of natural processes
+                        </h5>
+                    </div>
+                </li>
+
+                <li>
+                    <!-- IMU Images -->
+                    <img src="images/hand_manip.png">
+                    <div class="caption left-align" style="color:white">
+                        <h3 class>Sensor Fusion</h3>
+                        <h5 class="hide-on-small-only">with signal processing methods</h5>
+                    </div>
+                </li>
+
+                <li>
+                    <!-- Side Projects -->
+                    <img src="images/covid-project.png">
+                    <div class="caption right-align" style="color:black">
+                        <h3>Solving Real World problems</h3>
+                        <h5 class="hide-on-small-only">Responding to global crisis <br> with UI/UX driven solutions</h5>
+                    </div>
+                </li>
+            </ul>
         </div>
+
+            <br>
+
+            <div class="center row">
+                <div class="col s12 m4">
+                    <div class="card-panel">
+                        <a href="#computer-vision" data-click="true"><i class="material-icons large red-text text-accent-1">insert_photo</i></a>
+                        <a href="#computer-vision" style="color:#ff5252" data-click="true">
+                            <h4 class="card-text">Computer Vision</h4>
+                        </a>
+                        <p>Image Filtering, Object Detection</p>
+                    </div>
+                </div>
+
+                <div class="col s12 m4">
+                    <div class="card-panel">
+                        <a href="#machine-learning" data-click="true"><i class="material-icons large red-text text-accent-1">subtitles</i></a>
+                        <a href="#machine-learning" style="color:#ff5252" data-click="true">
+                            <h4 class="card-text">Machine Learning</h4>
+                        </a>
+                        <p>Classical ML & Neural Networks</p>
+                    </div>
+                </div>
+
+                <div class="col s12 m4">
+                    <div class="card-panel">
+                        <a href="#signal-processing" data-click="true"><i class="material-icons large red-text text-accent-1">computer</i></a>
+                        <a href="#signal-processing" style="color:#ff5252" data-click="true">
+                            <h4 class="card-text">Signal Processing</h4>
+                        </a>
+                        <p>Sensor Fusion, Fast Fourier Transforms</p>
+                    </div>
+                </div>
+            </div>
     </section>
 
     <!-- Projects -->
@@ -236,7 +209,7 @@
             <h3 class="center">
                 Projects
             </h3>
-            <ul class="collapsible" style = "background-color: #f8f1e3;">
+            <ul class="collapsible" style="background-color: #f8f1e3;">
 
                 <!-- Computer Vision -->
                 <li>
@@ -333,7 +306,7 @@
                                 <div class="collapsible-header"><i class="material-icons">camera_alt</i>Fast, easy and reliable reconfiguration for real-time pose estimation
                                 </div>
                                 <div class="collapsible-body">
-                                    To be updated soon. Stay tuned!    
+                                    To be updated soon. Stay tuned!
                                 </div>
                             </li>
 
@@ -351,38 +324,36 @@
 
                             <!-- Semisupervised Learning-->
                             <li>
-                                <div class="collapsible-header"><i class="material-icons">local_hospital</i>
-                                    Semisupervised learning on unilabel, multiclass, class imbalance environment
+                                <div class="collapsible-header"><i class="material-icons">local_hospital</i> Semisupervised learning on unilabel, multiclass, class imbalance environment
                                 </div>
                                 <div class="collapsible-body">
                                     <h7>
-                                        Semi-supervised learning is an approach to machine learning that combines a small amount of labeled data with a large amount of unlabeled data during training, 
-                                        thus increasing the size of the training set. A large rtraining set improves the performance of deep neural networks. 
+                                        Semi-supervised learning is an approach to machine learning that combines a small amount of labeled data with a large amount of unlabeled data during training, thus increasing the size of the training set. A large rtraining set improves the performance
+                                        of deep neural networks.
 
                                         <br></br>
 
-                                        Former state of the art semi-supervised model, Mean Teacher, trains with a student and a teacher network, where the loss is backpropagated to the stduent network and the teacher weights are updated 
-                                        by the student's weight with an exponential moving average. However, this leads to confirmation bias, which means that the wrong learning by the student model gets propagated to the teacher model.
-                                    
+                                        Former state of the art semi-supervised model, Mean Teacher, trains with a student and a teacher network, where the loss is backpropagated to the stduent network and the teacher weights are updated by the student's weight with an exponential moving average.
+                                        However, this leads to confirmation bias, which means that the wrong learning by the student model gets propagated to the teacher model.
+
                                         <br></br>
 
                                         Semi-supervised learning is also known to have poor performance in a class imbalanced environment (Hyun, M., Jeong, J., & Kwak, N. (2020). Class-Imbalanced Semi-Supervised Learning.)
 
                                         <br></br>
 
-                                        In medical datasets, data tend not to distributed among patients since most patients are healthy. A simple breakdown of the NIH Chest X-Ray 
-                                        dataset clearly illustrates this
-                                        
+                                        In medical datasets, data tend not to distributed among patients since most patients are healthy. A simple breakdown of the NIH Chest X-Ray dataset clearly illustrates this
+
                                         <br>
 
                                         <center>
-                                            <img src = "images/classImbalance.png"></img>
+                                            <img src="images/classImbalance.png"></img>
                                         </center>
 
                                         <center>
                                             Chest X-ray images from NIH-14 dataset
                                         </center>
-                                        
+
                                         <br>
 
                                         <table class>
@@ -401,15 +372,13 @@
                                                     <td>11535</td>
                                                     <td>60412</td>
                                                 </tr>
-                                              </tbody>
+                                            </tbody>
                                         </table>
 
                                         <br></br>
 
-                                        Therefore, the aim of my research was to develop a semi-supervised learning technique that has the capacity to perform better than
-                                        a supervised learning model with just a subset of the data, in such a class imbalance environment.
-
-                                        For further details, please contact me due to intellectual property rights.
+                                        Therefore, the aim of my research was to develop a semi-supervised learning technique that has the capacity to perform better than a supervised learning model with just a subset of the data, in such a class imbalance environment. For further details,
+                                        please contact me due to intellectual property rights.
                                     </h7>
 
                                 </div>
@@ -505,8 +474,7 @@
 
                             <!-- A*Star Internship -->
                             <li>
-                                <div class="collapsible-header"><i class="material-icons">pets</i>
-                                    Applying filters on Gaussian Noise IMU and Tactile Sensors
+                                <div class="collapsible-header"><i class="material-icons">pets</i> Applying filters on Gaussian Noise IMU and Tactile Sensors
                                 </div>
                                 <div class="collapsible-body">
                                     More will be updated soon! Stay tuned!
@@ -526,8 +494,7 @@
 
                             <!-- A*Star Internship -->
                             <li>
-                                <div class="collapsible-header"><i class="material-icons">bubble_chart</i>
-                                    Antiferromganetic Skyrmions for racetrack memory devices application
+                                <div class="collapsible-header"><i class="material-icons">bubble_chart</i> Antiferromganetic Skyrmions for racetrack memory devices application
                                 </div>
                                 <div class="collapsible-body">
 
@@ -580,54 +547,50 @@
                                     <br></br>
 
                                     <h7>
-                                    For further details, please contact me due to intellectual property rights.
+                                        For further details, please contact me due to intellectual property rights.
                                     </h7>
                                 </div>
                             </li>
 
                             <!-- NUS Covid-Response Project -->
                             <li>
-                                <div class="collapsible-header"><i class="material-icons">tap_and_play</i>
-                                    NUS Covid-19 Response Project
+                                <div class="collapsible-header"><i class="material-icons">tap_and_play</i> NUS Covid-19 Response Project
                                 </div>
                                 <div class="collapsible-body">
-                                    Over the summer of 2020, I was invited by Professor John Ho from NUS Electrical and Computer Engineering Department
-                                    to help with a national project aimed at assisting medical volunteers working frontline for infected
-                                    patients in the local foreign worker dormitories. 
-                                
-                                    <br></br>
-
-                                    The purpose of the project was to reduce the frequency of contact between medical volunteers and patients during health monitoring, 
-                                    thus keeping both parties safe. This is done by connecting Oximiter devices to the cloud so that the patients can submit their 
-                                    blood oxygen readings directly without any contact with others. 
+                                    Over the summer of 2020, I was invited by Professor John Ho from NUS Electrical and Computer Engineering Department to help with a national project aimed at assisting medical volunteers working frontline for infected patients in the local foreign worker
+                                    dormitories.
 
                                     <br></br>
 
-                                    I was involved in the hardware, software and media components. With Javascript, I helped integrate blinking LEDs to the WIFI connected 
-                                    Raspberry Pi Zero, which indicates to the patients when the readings were sucessfully uploaded.
+                                    The purpose of the project was to reduce the frequency of contact between medical volunteers and patients during health monitoring, thus keeping both parties safe. This is done by connecting Oximiter devices to the cloud so that the patients can submit
+                                    their blood oxygen readings directly without any contact with others.
+
+                                    <br></br>
+
+                                    I was involved in the hardware, software and media components. With Javascript, I helped integrate blinking LEDs to the WIFI connected Raspberry Pi Zero, which indicates to the patients when the readings were sucessfully uploaded.
 
                                     <center>
-                                        <img class="responsive-img" width = "500" src = "images/oximeter.png">
+                                        <img class="responsive-img" width="500" src="images/oximeter.png">
                                     </center>
-                                    
+
 
                                     <br></br>
 
                                     I also helped to create the website that served 2 purposes.
-                                    
+
                                     <br></br>
 
                                     <ol>1. Train the foreign workers on how to use the devices</ol>
                                     <ol>2. Educate the community about the efforts between government and academic institutions towards solving the crisis</ol>
 
                                     <br></br>
-                                    
+
                                     A picture is worth a thousand words. A website is worth a thousand. Do check out the website here!
 
-                                    <a href = "https://covid19-response.github.io/">
+                                    <a href="https://covid19-response.github.io/">
                                         <i class="material-icons">accessibility</i>
                                     </a>
-                                    
+
                                 </div>
                             </li>
 
@@ -635,7 +598,7 @@
                     </div>
                 </li>
             </ul>
-            </div>
+        </div>
     </section>
 
     <!-- Awards -->
@@ -647,74 +610,72 @@
             <ul class="collection">
                 <li class="collection-item">
                     <center>
+                        <i>Carnegie Mellon University, Robotics Institute
+                        <br>
+                        <b>Undergraduate Research Funding (2020)</b></i>
+                    </center>
+                </li>
+                <li class="collection-item">
+                    <center>
                         <i>15-122: Principles of Imperative Computation
-              <br>
-              <b>Top 4 Best Image Manipulation Class Competition (2020)</b>
-            </i>
+                        <br>
+                        <b>Top 4 Best Image Manipulation Class Competition (2020)</b></i>
                     </center>
                 </li>
                 <li class="collection-item">
                     <center>
                         <i>15-112: Fundamentals of Programming
-              <br>
-              <b>Hack 112 Top 30 Best Projects (2019)</b>
-            </i>
+                        <br>
+                        <b>Hack 112 Top 30 Best Projects, Nominated Final Term Project (2019)</b></i>
                     </center>
                 </li>
                 <li class="collection-item">
                     <center>
-                        <i>15-112: Fundamentals of Programming
-              <br>
-              <b>Nominated Final Term Project (2019)</b>
-            </i>
+                        <i>Carnegie Mellon University, College of Engineering
+                        <br>
+                        <b>Dean's List for Academic Performance (Fall 2019, Spring 2020)</b></i>
                     </center>
                 </li>
                 <li class="collection-item">
                     <center>
-                        <i>Carnegie Mellon University
-              <br>
-              <b>Dean's List for Academic Performance (Fall 2019, Spring 2020)</b>
-            </i>
-                    </center>
-                </li>
-                <li class="collection-item">
-                    <center>
-                        <i>Singapore Armed Forces
-              <br>
-              <b>Outstanding Soldier in Performance and Conduct (2018)</b>
-            </i>
+                        <i>Singapore Armed Forces, Specialist Cadet School
+                        <br>
+                        <b>Outstanding Soldier in Performance and Conduct (2018)</b></i>
                     </center>
                 </li>
                 <li class="collection-item">
                     <center>
                         <i>Agency for Science, Technology and Research (A*STAR)
-              <br>
-              <b>National Science Scholarship (NSS) Award (2018)</b>
-            </i>
+                        <br>
+                        <b>National Science Scholarship (NSS) Award (2018)</b> </i>
                     </center>
                 </li>
                 <li class="collection-item">
                     <center>
-                        <i>Hwa Chong Institution
-              <br>
-              <b>Outstanding Student Award (2017)</b>
-            </i>
+                        <i>Hwa Chong Institution, Junior College
+                        <br>
+                        <b>Outstanding Student Award (2017)</b></i>
                     </center>
                 </li>
                 <li class="collection-item">
                     <center>
-                        <i>Hwa Chong Institution
-              <br>
-              <b>Diploma with Distinction- top 1% in country (2016)</b>
-            </i>
+                        <i>Hwa Chong Institution, Junior College
+                        <br>
+                        <b>Diploma with Distinction- top 1% in country (2016)</b></i>
                     </center>
                 </li>
                 <li class="collection-item">
                     <center>
                         <i>Ministry of Education
-              <br>
-              <b>Selected to study Higher Level University Physics (2016)</b>
-            </i>
+                        <br>
+                        <b>Selected to study Higher Level University Physics (2016)</b></i>
+                    </center>
+                </li>
+                <li class="collection-item">
+                    <center>
+                        <i>Ministry of Education
+                        <br>
+                        <b>Art Elective Programme (AEP) scholarship for budding talents in Visual Arts (2011)</b></i>
                     </center>
                 </li>
             </ul>
@@ -733,7 +694,7 @@
                 </h6>
             </center>
 
-            <div class = "mentors">
+            <div class="mentors">
                 <center>
                     <p>
                         Sensor Calibration and Computer Vision for Soft Robotics Applications
@@ -817,12 +778,44 @@
         </div>
     </footer>
 
+    <!-- More about me -->
+    <div id="more-about-me" class="modal">
+        <div class="modal-content">
+            <h4>More about me</h4>
+            <p>
+                I was first introduced to Science and Technology by my parents, both of whom were chemists. When I was young, my father would often bring me to his laboratory to watch him work. One of my fondest memory was working with my father to synthesize shampoo
+                and body lotion.
+            </p>
+
+
+            <!-- Band -->
+            <p>
+                I was formerly part of the Hwa Chong Symphonic and Military Band in high school, where I played the French Horn.
+            </p>
+            <!-- Band Images -->
+            <div class="row">
+                <div class="col s6">
+                    <img class="responsive-img" src="images/band.jpg"></img>
+                </div>
+                <div class="col s6">
+                    <img class="responsive-img" src="images/band2.jpg"></img>
+                </div>
+            </div>
+            <p>
+                Our band was one of the top high school bands in Singapore, and we have won multiple awards both at a national level and international level.
+            </p>
+
+            <!-- Ukulele -->
+            <br>
+        </div>
+    </div>
+
     <!-- Contact Modal Structure -->
     <div id="phone" class="modal">
         <div class="modal-content">
             <h4>Phone Number</h4>
             <p>US Contact: +1 412-708-8343</p>
-            <p>I am uncontactable via this number since I am currently not in the US</p>
+            <p>Toll charges may apply as I am currently not in the US</p>
         </div>
     </div>
 
